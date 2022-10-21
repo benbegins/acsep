@@ -1,0 +1,71 @@
+.btn-primary {
+	@apply relative inline-block text-base text-light bg-pink px-8 py-4 rounded-lg overflow-hidden;
+	z-index: 1;
+
+	&:hover {
+		@apply text-light;
+		&::after {
+			opacity: 1;
+		}
+	}
+
+	&::after {
+		content: "";
+		@apply absolute inset-0 w-full h-full opacity-0;
+		z-index: -1;
+		background: linear-gradient(
+			270deg,
+			rgba(229, 98, 153, 1) 0%,
+			rgba(203, 42, 110, 1) 50%,
+			rgba(101, 0, 43, 1) 100%
+		);
+		transition: opacity 0.25s ease;
+	}
+}
+
+.btn-secondary {
+	--iconsize: 13px;
+	@apply relative inline-block text-base text-pink;
+	padding-right: calc(var(--iconsize) + 10px);
+
+	&::after {
+		content: "";
+		@apply absolute right-0;
+		top: calc(50% - (var(--iconsize) / 2) + 1px);
+		width: var(--iconsize);
+		height: var(--iconsize);
+		background: url("/src/img/icon-arrow-btn.svg") center center no-repeat;
+		background-size: var(--iconsize) var(--iconsize);
+		transition: transform 0.25s ease;
+	}
+
+	&:hover {
+		&::after {
+			transform: translateX(6px);
+		}
+	}
+}
+
+.btn-liste {
+	--iconsize: 13px;
+	@apply relative inline-block;
+	padding-left: calc(var(--iconsize) + 15px);
+
+	&::before {
+		content: "";
+		@apply absolute left-0;
+		top: calc(50% - (var(--iconsize) / 2));
+		width: var(--iconsize);
+		height: var(--iconsize);
+		background: url("/src/img/icon-arrow-btn.svg") center center no-repeat;
+		background-size: var(--iconsize) var(--iconsize);
+		transition: transform 0.25s ease;
+		transform: rotate(-45deg);
+	}
+
+	&:hover {
+		&::before {
+			transform: rotate(0deg);
+		}
+	}
+}

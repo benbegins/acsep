@@ -2,7 +2,7 @@
 <?php
 
 // Configure les fonctionnalités de bases
-function nomdutheme_theme_setup(){
+function acsep_theme_setup(){
 
     // Prise en charge des images de mise en avant
     add_theme_support('post-thumbnails');
@@ -10,16 +10,21 @@ function nomdutheme_theme_setup(){
     // Ajouter automatiquement le titre du site dans l'entete
     add_theme_support('title-tag');
 
+    // Support pour ordonner les pages par attributs
+    add_post_type_support( 'post', 'page-attributes' );
+
     // Ajouts des menus
     register_nav_menus( array(
-        'main' => 'Menu Principal',
+        'menu-solutions' => 'Menu Solutions',
+        'menu-services' => 'Menu Services',
+        'menu-acsep' => 'Menu ACSEP',
     ) );
 
 }
-add_action( 'after_setup_theme', 'nomdutheme_theme_setup' );
+add_action( 'after_setup_theme', 'acsep_theme_setup' );
 
 // Ajout des scripts
-function nomdutheme_theme_register_assets(){
+function acsep_theme_register_assets(){
 
     // CSS
     wp_enqueue_style( 
@@ -39,7 +44,7 @@ function nomdutheme_theme_register_assets(){
     );
 
 }
-add_action( 'wp_enqueue_scripts', 'nomdutheme_theme_register_assets');
+add_action( 'wp_enqueue_scripts', 'acsep_theme_register_assets');
 
 
 // Custom image size
@@ -57,3 +62,6 @@ add_filter('auto_plugin_update_send_email', '__return_false');
 
 // Cleanup Wordpress
 require get_template_directory() . '/inc/cleanup.php';
+
+// Text domain folder
+load_theme_textdomain( 'acsep', get_template_directory() . '/languages' );

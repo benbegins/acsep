@@ -1,3 +1,7 @@
 import "../scss/style.scss"
 
-console.log("Hello")
+import menu from "./menu"
+import sliderServices from "./sliders"
+
+menu()
+sliderServices()

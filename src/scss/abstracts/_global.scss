@@ -1,6 +1,6 @@
 ::selection {
-	background: red;
-	color: white;
+	background: $pink;
+	color: $light;
 }
 
 html {
@@ -13,11 +13,29 @@ html {
 body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	font-family: sans-serif;
-	font-weight: 400;
+	font-family: "Switzer", sans-serif;
+	font-weight: 500;
 	@apply text-base;
 }
 
 .container {
 	max-width: none;
+}
+
+a {
+	transition: 0.25s;
+}
+
+.halo {
+	position: absolute;
+	z-index: -1;
+	pointer-events: none;
+	width: 85vw;
+	height: 85vw;
+	background: radial-gradient(
+		circle,
+		rgba(203, 42, 110, 0.2) 0%,
+		rgba(203, 42, 110, 0) 66%
+	);
+	// transform: translate(50%, -50%);
 }

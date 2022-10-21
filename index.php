@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-    <div class="index">
-        <p class="bg-light text-dark">Hello</p>
+    <div class="page-index">
+        <p class="bg-light text-dark">Index</p>
     </div>
 
 <?php get_footer(); ?>

@@ -1,0 +1,10 @@
+.section-contact {
+	@apply text-light;
+	background: $pink;
+	background: linear-gradient(
+		220deg,
+		rgba(229, 98, 153, 1) 0%,
+		rgba(203, 42, 110, 1) 50%,
+		rgba(101, 0, 43, 1) 100%
+	);
+}

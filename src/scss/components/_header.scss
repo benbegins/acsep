@@ -1,2 +1,212 @@
 .site-header {
+	.burger {
+		@media screen and (min-width: $lg) {
+			display: none;
+		}
+		.line {
+			@apply bg-dark rounded-full;
+			width: 35px;
+			height: 2px;
+		}
+		.line-2 {
+			margin: 8px 0;
+		}
+	}
+
+	.main-menu {
+		@apply hidden fixed z-10 inset-0 bg-dark text-light w-full h-full min-h-screen;
+		padding: 12vh 15vw;
+		overflow: scroll;
+
+		&.active {
+			@apply block;
+		}
+
+		@media screen and (min-width: $lg) {
+			@apply block relative bg-light text-dark w-auto h-auto min-h-0 p-0 overflow-visible;
+		}
+
+		.btn-close {
+			position: absolute;
+			z-index: 100;
+			top: 0;
+			right: 0;
+			width: 70px;
+			height: 70px;
+			background: $pink url("/src/img/icon-close.svg") center center
+				no-repeat;
+			background-size: 24px 24px;
+
+			@media screen and (min-width: $lg) {
+				display: none;
+			}
+		}
+
+		.btn-back {
+			display: none;
+			position: absolute;
+			z-index: 100;
+			top: 0;
+			left: 0;
+			width: 70px;
+			height: 70px;
+			background: url("/src/img/icon-back.svg") center center no-repeat;
+			background-size: 17px 17px;
+
+			&.active {
+				display: block;
+				@media screen and (min-width: $lg) {
+					display: none;
+				}
+			}
+		}
+
+		nav {
+			@apply flex flex-col items-start;
+
+			@media screen and (min-width: $lg) {
+				@apply flex-row items-center;
+			}
+
+			a,
+			button {
+				@apply inline-block text-left text-lg;
+				padding: 2vh 0;
+				transition: color 0.25s;
+
+				@media screen and (min-width: $lg) {
+					@apply text-base py-0 px-4 shrink-0;
+				}
+
+				&:hover {
+					@apply text-pink;
+				}
+			}
+
+			.btn-sub {
+				position: relative;
+				padding-right: 25px;
+
+				&::after {
+					content: "";
+					position: absolute;
+					width: 13px;
+					height: 13px;
+					background: url("/src/img/icon-submenu-mobile.svg");
+					background-size: 13px 13px;
+					right: 0;
+					top: calc(50% - 5px);
+				}
+
+				@media screen and (min-width: $lg) {
+					padding-right: 17px;
+					margin-right: 0.75rem;
+
+					&::after {
+						background: url("/src/img/icon-submenu.svg");
+						background-size: 13px 13px;
+						transition: transform 0.25s ease;
+					}
+
+					&.active {
+						@apply text-pink;
+						&::after {
+							transform: rotate(180deg);
+						}
+					}
+				}
+			}
+
+			.btn-search {
+				width: 25px;
+				height: 25px;
+				margin-top: 10px;
+				background: url("/src/img/icon-search-white.svg") center center
+					no-repeat;
+				background-size: 25px 25px;
+
+				@media screen and (min-width: $lg) {
+					@apply mt-0 ml-2 mr-4;
+					background: url("/src/img/icon-search.svg") center center
+						no-repeat;
+					background-size: 16px 16px;
+					transition: background 0.25s;
+
+					&:hover {
+						background: url("/src/img/icon-search-pink.svg") center
+							center no-repeat;
+						background-size: 16px 16px;
+					}
+				}
+			}
+
+			.btn-contact {
+				@apply bg-pink text-light absolute bottom-0 left-0 w-full text-base text-center;
+				z-index: 1;
+
+				svg {
+					display: inline;
+					margin-right: 10px;
+				}
+
+				&:hover {
+					@apply text-light;
+					&::after {
+						opacity: 1;
+					}
+				}
+
+				&::after {
+					content: "";
+					@apply absolute inset-0 w-full h-full opacity-0;
+					z-index: -1;
+					background: linear-gradient(
+						270deg,
+						rgba(229, 98, 153, 1) 0%,
+						rgba(203, 42, 110, 1) 50%,
+						rgba(101, 0, 43, 1) 100%
+					);
+					transition: opacity 0.25s ease;
+				}
+
+				@media screen and (min-width: $lg) {
+					@apply relative rounded-lg overflow-hidden w-auto ml-3 py-4 px-6;
+				}
+			}
+		}
+
+		.submenu {
+			@apply hidden fixed z-20 inset-0 bg-dark text-light w-full h-full min-h-screen;
+			padding: 12vh 15vw;
+			overflow: scroll;
+
+			&.active {
+				@apply block;
+
+				@media screen and (min-width: $lg) {
+					@apply absolute w-screen h-auto overflow-auto bottom-auto left-auto bg-light text-dark;
+					min-height: auto;
+					right: -4vw;
+					top: calc(100% + 0.75rem);
+					padding: 1rem 4vw;
+
+					a {
+						@apply px-0 py-3;
+					}
+				}
+			}
+		}
+	}
+
+	.overlay {
+		@apply hidden bg-dark fixed inset-0;
+		z-index: -1;
+		opacity: 0.3;
+
+		@media screen and (min-width: $lg) {
+			&.active {
+				display: block;
+			}
+		}
+	}
 }
