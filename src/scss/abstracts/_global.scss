@@ -3,11 +3,14 @@
 	color: $light;
 }
 
+html,
+body {
+	width: 100%;
+	min-height: 100%;
+}
+
 html {
-	scroll-behavior: smooth;
-	@media (prefers-reduced-motion: reduce) {
-		scroll-behavior: auto;
-	}
+	scroll-behavior: initial;
 }
 
 body {
@@ -26,16 +29,102 @@ a {
 	transition: 0.25s;
 }
 
-.halo {
-	position: absolute;
+.fade {
+	opacity: 0;
+}
+
+.screen-reader-text {
+	display: none;
+}
+
+.img-transition {
+	img {
+		transition: transform 0.35s $ease;
+		transform: scale(1.02);
+	}
+	&::before {
+		content: "";
+		@apply absolute inset-0 bg-dark w-full h-full opacity-0;
+		z-index: 1;
+		transition: opacity 0.3s ease;
+	}
+
+	&:hover {
+		img {
+			transform: scale(1);
+		}
+
+		&::before {
+			opacity: 0.1;
+		}
+	}
+}
+
+.back-3d {
 	z-index: -1;
-	pointer-events: none;
-	width: 85vw;
-	height: 85vw;
-	background: radial-gradient(
-		circle,
-		rgba(203, 42, 110, 0.2) 0%,
-		rgba(203, 42, 110, 0) 66%
+	width: 100%;
+	height: 0;
+	padding-bottom: calc(100% / (16 / 10));
+	margin-top: -20%;
+
+	@media screen and (min-width: $lg) {
+		position: absolute;
+		top: 50%;
+		z-index: -1;
+		width: 100%;
+		margin-top: 0;
+		transform: translateY(-50%);
+	}
+
+	&.back-3d-01 {
+		background: url("/src/img/illus/back-3d-01.jpg") center right no-repeat;
+		background-size: cover;
+	}
+	&.back-3d-02 {
+		background: url("/src/img/illus/back-3d-02.jpg") center right no-repeat;
+		background-size: cover;
+	}
+	&.back-3d-03 {
+		background: url("/src/img/illus/back-3d-03.jpg") center right no-repeat;
+		background-size: cover;
+	}
+}
+
+.bg-light-beige {
+	background: rgba($beige, 0.12);
+}
+
+.bg-light-pink {
+	background: rgba($pink, 0.12);
+}
+
+.bg-gradient-pink {
+	background: $pink;
+	background: linear-gradient(
+		220deg,
+		rgba(229, 98, 153, 1) 0%,
+		rgba(203, 42, 110, 1) 50%,
+		rgba(101, 0, 43, 1) 100%
 	);
-	// transform: translate(50%, -50%);
+}
+
+.img-container-cover {
+	@apply relative w-full h-0 overflow-hidden rounded-xl;
+
+	img {
+		@apply absolute w-full h-full object-cover;
+	}
+}
+
+.iframe-container {
+	@apply relative w-full h-0;
+	padding-bottom: 70%;
+
+	iframe {
+		@apply absolute w-full h-full;
+	}
+}
+
+.page-temoignages iframe {
+	@apply rounded-xl;
 }

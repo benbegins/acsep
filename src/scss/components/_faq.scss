@@ -1,0 +1,43 @@
+.faq {
+	&__item {
+		@apply pt-5 pb-4;
+
+		.question {
+			@apply pb-2;
+			position: relative;
+			cursor: pointer;
+			transition: color 0.25s;
+
+			&::after {
+				content: "";
+				@apply absolute right-0;
+				top: 2px;
+				width: 25px;
+				height: 25px;
+				background: url("/src/img/icon-faq.svg") center center no-repeat;
+				background-size: contain;
+				transition: transform 0.5s $ease;
+			}
+
+			&:hover {
+				@apply text-pink;
+
+				&::after {
+					opacity: 0.75;
+				}
+			}
+
+			&.active {
+				&::after {
+					transform: rotate(135deg);
+				}
+			}
+		}
+
+		.reponse {
+			@apply overflow-hidden;
+			max-height: 0;
+			transition: max-height 0.5s $ease;
+		}
+	}
+}

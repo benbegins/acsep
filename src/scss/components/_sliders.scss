@@ -1,20 +1,61 @@
+// Slider services
 .swiper.slider-services {
 	@apply container;
 
 	.swiper-slide {
 		width: 90%;
 	}
+}
 
-	.img {
-		@apply relative h-0 w-full rounded-lg overflow-hidden;
-		padding-bottom: 60%;
+// Slider solutions
+.swiper.slider-solutions {
+	@apply container;
 
-		@media screen and (min-width: $md) {
-			padding-bottom: 100%;
-		}
+	.swiper-slide {
+		width: 90%;
+	}
+}
 
-		img {
-			@apply absolute w-full h-full object-cover;
-		}
+// Slider actualites
+.swiper.slider-actualites {
+	@apply container;
+
+	.swiper-slide {
+		width: 90%;
+	}
+}
+
+// Slider temoignages
+.swiper.slider-temoignages {
+	@apply container;
+
+	.swiper-slide {
+		width: 90%;
+		margin-bottom: 36px;
+		box-shadow: 0 12px 24px rgba($dark, 0.08);
+		// height: auto;
+	}
+}
+
+.slider-navigation {
+	width: 56px;
+	height: 56px;
+	border: 1px solid $pink;
+	border-radius: 100%;
+	background: url("/src/img/icon-arrow-slider.svg") center center no-repeat;
+	background-size: 18px 18px;
+	cursor: pointer;
+	transition: background 0.2s ease;
+
+	&.prev {
+		transform: rotate(180deg);
+	}
+
+	&:hover {
+		background-position-x: 60%;
+	}
+
+	&.swiper-button-disabled {
+		opacity: 0.33;
 	}
 }

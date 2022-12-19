@@ -1,0 +1,23 @@
+.pagination {
+	.nav-links {
+		display: flex;
+		justify-content: center;
+	}
+
+	.page-numbers {
+		display: inline-block;
+		padding: 0.5rem 0.75rem;
+		margin: 0 0.1rem;
+		border-radius: 4px;
+	}
+
+	a.page-numbers {
+		&:hover {
+			@apply bg-gray;
+		}
+	}
+
+	.page-numbers.current {
+		@apply bg-dark text-light;
+	}
+}

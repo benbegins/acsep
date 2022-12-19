@@ -1,0 +1,50 @@
+.form-search {
+	@apply flex rounded-lg w-full max-w-full;
+	background: rgba($gray, 0.5);
+
+	input {
+		@apply px-8 py-4 w-full;
+	}
+
+	.input-container {
+		flex: auto;
+
+		input[type="text"] {
+			background: none;
+			outline: none;
+		}
+	}
+
+	.submit-container {
+		@apply relative;
+
+		&::after {
+			content: "";
+			@apply absolute w-full h-full left-0 top-0;
+			background: url("/src/img/icon-search-white.svg") center center
+				no-repeat;
+			background-size: 16px;
+
+			@media screen and (min-width: $lg) {
+				display: none;
+			}
+		}
+
+		input[type="submit"] {
+			@apply bg-pink text-light rounded-lg;
+			text-indent: -9999px;
+			width: 50px;
+			cursor: pointer;
+			transition: background 0.25s;
+
+			@media screen and (min-width: $lg) {
+				text-indent: 0;
+				width: auto;
+			}
+
+			&:hover {
+				background: darken($pink, 10);
+			}
+		}
+	}
+}

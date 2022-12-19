@@ -1,0 +1,14 @@
+.item-actualite {
+	.img {
+		@apply relative h-0 w-full rounded-lg overflow-hidden;
+		padding-bottom: 60%;
+
+		@media screen and (min-width: $md) {
+			padding-bottom: 70%;
+		}
+
+		img {
+			@apply absolute w-full h-full object-cover;
+		}
+	}
+}

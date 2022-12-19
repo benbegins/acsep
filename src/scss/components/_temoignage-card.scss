@@ -1,0 +1,24 @@
+.temoignage-card {
+	@apply bg-light rounded-xl px-6 py-8;
+	box-shadow: 0 12px 24px rgba($dark, 0.08);
+
+	@media screen and (min-width: $lg) {
+		@apply px-12 py-12;
+	}
+
+	&__citation {
+		position: relative;
+		padding-top: 30px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 28px;
+			height: 20px;
+			background: url("/src/img/icon-quote.svg") center center no-repeat;
+			background-size: contain;
+		}
+	}
+}

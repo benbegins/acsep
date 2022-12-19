@@ -1,3 +1,39 @@
 .section-title {
 	@apply text-xl font-extrabold;
 }
+
+.section-title-sm {
+	@apply relative text-xl font-extrabold text-pink;
+
+	@media screen and (min-width: $lg) {
+		width: 50%;
+		margin-left: calc(100% * (1 / 6));
+	}
+
+	&::before {
+		@apply absolute right-full;
+
+		content: "";
+		top: 2px;
+		height: 32px;
+		width: 1.5rem;
+		margin-right: 0.5rem;
+
+		background: $pink;
+		background: linear-gradient(
+			220deg,
+			rgba(229, 98, 153, 1) 0%,
+			rgba(203, 42, 110, 1) 50%,
+			rgba(101, 0, 43, 1) 100%
+		);
+
+		@media screen and (min-width: $sm) {
+			width: 3rem;
+		}
+
+		@media screen and (min-width: $lg) {
+			width: calc(92vw * (1 / 6) + (4vw - 2rem));
+			margin-right: 2rem;
+		}
+	}
+}

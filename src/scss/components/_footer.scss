@@ -1,2 +1,12 @@
 .site-footer {
+	.menu-footer {
+		display: none;
+		@media screen and (min-width: $lg) {
+			display: block;
+		}
+
+		a {
+			@apply inline-block opacity-50 hover:opacity-100 mb-3;
+		}
+	}
 }

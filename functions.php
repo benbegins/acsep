@@ -15,9 +15,8 @@ function acsep_theme_setup(){
 
     // Ajouts des menus
     register_nav_menus( array(
-        'menu-solutions' => 'Menu Solutions',
-        'menu-services' => 'Menu Services',
         'menu-acsep' => 'Menu ACSEP',
+        'menu-rejoignez-nous' => 'Menu Rejoignez-nous',
     ) );
 
 }
@@ -65,3 +64,9 @@ require get_template_directory() . '/inc/cleanup.php';
 
 // Text domain folder
 load_theme_textdomain( 'acsep', get_template_directory() . '/languages' );
+
+// Excerpt length
+function mytheme_custom_excerpt_length( $length ) {
+    return 30;
+}
+add_filter( 'excerpt_length', 'mytheme_custom_excerpt_length', 999 );

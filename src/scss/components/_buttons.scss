@@ -1,5 +1,5 @@
 .btn-primary {
-	@apply relative inline-block text-base text-light bg-pink px-8 py-4 rounded-lg overflow-hidden;
+	@apply relative inline-block text-base text-light bg-pink px-6 py-4 rounded-lg overflow-hidden;
 	z-index: 1;
 
 	&:hover {
@@ -14,12 +14,24 @@
 		@apply absolute inset-0 w-full h-full opacity-0;
 		z-index: -1;
 		background: linear-gradient(
-			270deg,
+			220deg,
 			rgba(229, 98, 153, 1) 0%,
 			rgba(203, 42, 110, 1) 50%,
 			rgba(101, 0, 43, 1) 100%
 		);
 		transition: opacity 0.25s ease;
+	}
+
+	&.white {
+		@apply bg-light text-dark;
+
+		&::after {
+			background: linear-gradient(
+				220deg,
+				rgba(255, 255, 255, 1) 0%,
+				rgba(247, 191, 215, 1) 100%
+			);
+		}
 	}
 }
 
@@ -42,6 +54,40 @@
 	&:hover {
 		&::after {
 			transform: translateX(6px);
+		}
+	}
+
+	&.white {
+		@apply text-light;
+
+		&::after {
+			background: url("/src/img/icon-arrow-btn-white.svg") center center
+				no-repeat;
+			background-size: var(--iconsize) var(--iconsize);
+		}
+	}
+
+	&.back {
+		// --iconsize: 10px;
+		@apply text-dark opacity-50 text-sm pr-0;
+		padding-left: calc(var(--iconsize) + 5px);
+
+		&::after {
+			right: auto;
+			left: 0;
+			top: calc(50% - (var(--iconsize) / 2));
+			width: var(--iconsize);
+			height: var(--iconsize);
+			background: url("/src/img/icon-arrow-btn-dark.svg") center center
+				no-repeat;
+			background-size: var(--iconsize) var(--iconsize);
+			transform: rotate(180deg);
+		}
+
+		&:hover {
+			&::after {
+				transform: rotate(180deg) translateX(6px);
+			}
 		}
 	}
 }
@@ -67,5 +113,16 @@
 		&::before {
 			transform: rotate(0deg);
 		}
+	}
+}
+
+.btn-tertiary {
+	@apply inline-block px-7 py-5 rounded-lg border border-gray text-dark/50;
+
+	&.active,
+	&:hover {
+		@apply text-pink;
+		background: rgba($pink, 0.1);
+		border-color: transparent;
 	}
 }
