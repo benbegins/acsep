@@ -49,8 +49,15 @@ get_header();
             </div>
         </section>
 
-        <?php 
-        get_template_part( '/template-parts/section-offres' );
+         <!-- Offres d'emploi -->
+         <?php 
+        $args= array(
+            'post_type'=>'offres-emploi',
+        );
+        $offres = new WP_Query($args);
+        if($offres->posts){
+            get_template_part( '/template-parts/section-offres' );
+        }
         ?>
 
 

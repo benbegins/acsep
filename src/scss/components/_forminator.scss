@@ -1,0 +1,70 @@
+.forminator-field {
+	label {
+		@apply text-sm inline-block mb-1;
+	}
+	input,
+	textarea,
+	select {
+		@apply w-full text-base rounded-md text-light px-4 py-3;
+		background: rgba($light, 0.2);
+
+		&:focus {
+			outline: 1px solid $light;
+		}
+	}
+	select {
+		height: 48px;
+	}
+
+	.forminator-error-message {
+		@apply inline-block text-sm leading-none mt-1;
+	}
+
+	// Checkbox
+	.forminator-checkbox__wrapper {
+		display: grid;
+		grid-template-columns: 25px 1fr;
+
+		.forminator-checkbox__label {
+			@apply inline-block text-sm leading-tight;
+		}
+
+		input[type="checkbox"] {
+			display: none;
+		}
+
+		/* Style the custom checkbox */
+		input[type="checkbox"] + .forminator-checkbox-box::before {
+			content: "";
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			vertical-align: middle;
+			background: rgba($light, 0.5);
+			border-radius: 3px;
+		}
+
+		/* Style the checked state */
+		input[type="checkbox"]:checked + .forminator-checkbox-box::before {
+			content: "\2713";
+			background: $light;
+			border-color: $light;
+			color: $pink;
+			font-size: 12px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 12px;
+		}
+	}
+}
+
+// 2 Cols
+.input-cols-2 {
+	@media screen and (min-width: $lg) {
+		@apply grid grid-cols-2 gap-8;
+
+		.forminator-row {
+			margin-bottom: 0 !important;
+		}
+	}
+}

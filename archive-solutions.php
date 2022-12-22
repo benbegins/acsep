@@ -75,10 +75,10 @@
         // Check if post exist in current language
         if(pll_get_post($integration->ID)):
         ?>
-        <section class="md:border-t border-gray relative">
-            <div class="container md:grid md:grid-cols-2 md:items-center md:gap-8 min-h-[33vw]">
+        <section class="pb-section-mobile lg:pb-section relative">
+            <div class="container md:grid md:grid-cols-2 md:items-center md:gap-8 min-h-[28vw]">
 
-                <div class="mb-12 md:mb-0 md:h-full md:relative">
+                <div class="mb-12 md:mb-0 md:h-full md:relative rounded-xl overflow-hidden">
                     <img class="md:absolute w-full md:h-full md:object-cover" src="<?= get_template_directory_uri(); ?>/src/img/photos/visuel-integration.jpg" alt="<?= $integration->post_title; ?>">
                 </div>
 

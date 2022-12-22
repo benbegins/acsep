@@ -108,6 +108,13 @@ a {
 	);
 }
 
+.bg-lines {
+	@media screen and (min-width: $lg) {
+		background: url("/src/img/illus/bg-lines.jpg") center center no-repeat;
+		background-size: 100%;
+	}
+}
+
 .img-container-cover {
 	@apply relative w-full h-0 overflow-hidden rounded-xl;
 

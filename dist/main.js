@@ -558,7 +558,7 @@ function raf(time) {
 }
 requestAnimationFrame(raf);
 
-},{"../scss/style.scss":"kxOFu","./menu":"1oXVJ","./sliders":"f3zS5","./faq":"kqbuQ","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","./animations":"gIqf1","./lenis":"agGoQ"}],"kxOFu":[function() {},{}],"1oXVJ":[function(require,module,exports) {
+},{"../scss/style.scss":"kxOFu","./menu":"1oXVJ","./sliders":"f3zS5","./faq":"kqbuQ","./animations":"gIqf1","./lenis":"agGoQ","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"kxOFu":[function() {},{}],"1oXVJ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _gsap = require("gsap");
@@ -642,7 +642,7 @@ const menu = ()=>{
 };
 exports.default = menu;
 
-},{"gsap":"33IqQ","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","./lenis":"agGoQ"}],"33IqQ":[function(require,module,exports) {
+},{"gsap":"33IqQ","./lenis":"agGoQ","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"33IqQ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "gsap", ()=>gsapWithCSS);
@@ -4652,7 +4652,7 @@ const lenis = new (0, _lenisDefault.default)({
 });
 exports.default = lenis;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"5oERU","@studio-freight/lenis":"fhIHr"}],"fhIHr":[function(require,module,exports) {
+},{"@studio-freight/lenis":"fhIHr","@parcel/transformer-js/src/esmodule-helpers.js":"5oERU"}],"fhIHr":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>c);

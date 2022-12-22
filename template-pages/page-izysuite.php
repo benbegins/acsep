@@ -12,7 +12,7 @@ get_header();
         <section class='py-section-mobile lg:py-section relative'>
             <div class="container flex flex-col-reverse lg:pt-section-mobile lg:flex-row lg:items-center">
                 <div class="lg:w-5/12">
-                    <h1 class="fade font-extrabold text-2xl lg:text-3xl lg:w-2/3 xxl:w-1/2" data-translate="2">
+                    <h1 class="fade font-extrabold text-2xl lg:text-3xl lg:w-4/5" data-translate="2">
                         <?php the_title(); ?>
                     </h1>
                     <?php 
@@ -102,10 +102,10 @@ get_header();
         // Check if post exist in current language
         if(pll_get_post($developpement_applicatifs->ID)):
         ?>
-        <section class="md:border-t md:border-b border-gray relative">
-            <div class="container md:grid md:grid-cols-2 md:items-center md:gap-8 min-h-[33vw]">
+        <section class="relative">
+            <div class="container md:grid md:grid-cols-2 md:items-center md:gap-8 min-h-[28vw]">
 
-                <div class="mb-12 md:mb-0 md:h-full md:relative">
+                <div class="mb-12 md:mb-0 md:h-full md:relative rounded-xl overflow-hidden">
                     <img class="md:absolute w-full md:h-full md:object-cover" src="<?= get_template_directory_uri(); ?>/src/img/photos/visuel-developpement-applicatifs.jpg" alt="<?= $developpement_applicatifs->post_title; ?>">
                 </div>
 

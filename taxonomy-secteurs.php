@@ -14,7 +14,7 @@ $content = get_field("content", "secteurs_" . $term->term_id);
         <section class='py-section-mobile lg:py-section relative'>
             <div class="container flex flex-col-reverse lg:pt-section-mobile lg:flex-row lg:items-center">
                 <div class="lg:w-5/12">
-                    <h1 class="fade font-extrabold text-2xl lg:text-3xl lg:w-2/3 xxl:w-1/2" data-translate="2">
+                    <h1 class="fade font-extrabold text-2xl lg:text-3xl lg:w-4/5" data-translate="2">
                         <?php single_term_title(); ?>
                     </h1>
 
@@ -114,6 +114,34 @@ $content = get_field("content", "secteurs_" . $term->term_id);
         endif; 
         wp_reset_postdata();
         ?>     
+
+
+        <!-- Références -->
+        <?php 
+        $args= array(
+            'post_type'=>'clients',
+        );
+        $references = new WP_Query($args); 
+        if($references->posts):
+        ?>
+        <section class="pb-section-mobile lg:pb-section relative">
+            <div class="container md:grid md:grid-cols-2 md:items-center md:gap-8 min-h-[28vw]">
+
+                <div class="mb-12 md:mb-0 md:h-full md:relative rounded-xl overflow-hidden">
+                    <img class="md:absolute w-full md:h-full md:object-cover" src="<?= get_template_directory_uri(); ?>/src/img/photos/img-menu-acsep.jpg" alt="clients acsep">
+                </div>
+
+                <div class="mb-12 md:mb-0 md:py-16 lg:w-5/6 lg:ml-auto lg:py-24">
+                    <h2 class="text-xl lg:text-2xl font-extrabold"><?php _e('Nos références', 'acsep'); ?></h2>
+                    <p class="my-6"><?php _e('Le groupe ACSEP accompagne une centaine de clients actifs parmi lesquels Auchan, Boulanger, Carrefour, C-Log, DHL Supply Chain, Distrimag, Geodis, Habitat, ID Logistics, Lustucru, Metro, Panzani, Petit Bateau, Samsung Electronics France, Sonepar et XPO Logistics.', 'acsep'); ?></p>
+                    <div class="flex flex-col items-start lg:flex-row lg:items-center lg:gap-6">
+                        <a href="<?php echo get_post_type_archive_link( 'clients' ); ?>" class="btn-primary"><?php _e('Découvrez nos références', 'acsep'); ?></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <?php endif; ?>
 
 
         <!-- Contact -->

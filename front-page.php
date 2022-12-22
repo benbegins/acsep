@@ -40,8 +40,8 @@
 
 
         <!-- IzyPro -->
-        <section class="md:border-t md:border-b border-gray relative">
-            <div class="container md:grid md:grid-cols-2 md:items-center md:gap-8  min-h-[33vw]">
+        <section class="relative">
+            <div class="container md:grid md:grid-cols-2 md:items-center md:gap-8  min-h-[28vw]">
 
                 <div class="md:col-start-2 md:row-start-1 mb-12 md:mb-0 md:py-16 lg:w-5/6 lg:ml-auto lg:py-24">
                     <h2 data-translate="2" class="text-xl lg:text-2xl font-extrabold"><?php _e('Facilitez la gestion de votre entrepôt avec notre solution IzyPro WMS', 'acsep'); ?></h2>
@@ -51,7 +51,7 @@
                     </div>
                 </div>
 
-                <div class="md:col-start-1 md:row-start-1 md:h-full md:relative overflow-hidden">
+                <div class="md:col-start-1 md:row-start-1 md:h-full md:relative overflow-hidden rounded-xl">
                     <img class="md:absolute w-full md:h-full md:object-cover" src="<?= get_template_directory_uri(); ?>/src/img/photos/visuel-izypro.jpg" alt="IzyPro">
                 </div>
 

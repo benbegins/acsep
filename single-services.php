@@ -7,7 +7,7 @@
         <section class='py-section-mobile lg:py-section relative'>
             <div class="container flex flex-col-reverse lg:pt-section-mobile lg:flex-row lg:items-center">
                 <div class="lg:w-5/12">
-                    <h1 class="fade font-extrabold text-2xl lg:text-3xl lg:w-2/3 xxl:w-1/2" data-translate="2">
+                    <h1 class="fade font-extrabold text-2xl lg:text-3xl lg:w-4/5" data-translate="2">
                         <?php the_title(); ?>
                     </h1>
                     <?php 
