@@ -79,21 +79,37 @@
                         </ul>
                     </div>
                             
-                    <?php 
-                    if(has_nav_menu( 'menu-acsep' )):
-                    ?>
                     <div>
                         <p class="font-extrabold mb-6"><a href="">ACSEP</a></p>
-                        <?php 
-                        $args = array(
-                            'theme_location'=>'menu-acsep',
-                            'container'=>'',
-                            'menu_class'=>'menu-footer',
-                        );
-                        $menu_acsep = wp_nav_menu($args);     
-                        ?>
+                        <ul class="hidden lg:block">
+                            <li>
+                                <a class="inline-block opacity-50 hover:opacity-100 mb-3" href="<?php echo get_the_permalink(pll_get_post(get_page_by_path( 'la-societe' )->ID)); ?>"><?php _e('La société', 'acsep'); ?></a>
+                            </li>
+                            <li>
+                                <a class="inline-block opacity-50 hover:opacity-100 mb-3" href="<?php echo get_post_type_archive_link( 'actualites' ); ?>"><?php _e('Actualités & événements', 'acsep'); ?></a>
+                            </li>
+                            <li>
+                                <a class="inline-block opacity-50 hover:opacity-100 mb-3" href="<?php echo get_post_type_archive_link( 'clients' ); ?>"><?php _e('Nos références', 'acsep'); ?></a>
+                            </li>
+                            <li>
+                            <a class="inline-block opacity-50 hover:opacity-100 mb-3" href="<?php echo get_post_type_archive_link( 'offres-emploi' ); ?>"><?php _e('Offres d\'emploi', 'acsep'); ?></a>
+                            </li>
+                            <?php
+                            $menuAcsep = get_nav_menu_locations()['menu-acsep'];
+                            $menuAcsepItems = wp_get_nav_menu_items($menuAcsep);
+                            if($menuAcsepItems){
+                                foreach($menuAcsepItems as $item){
+                                    echo '<li>';
+                                    echo '<a class="inline-block opacity-50 hover:opacity-100 mb-3" href="' . $item->url . '">';
+                                    echo $item->title;
+                                    echo '</a>';
+                                    echo '</li>';
+                                }     
+                            }
+                            ?>
+                        </ul>
                     </div>
-                    <?php endif; ?>
+                    
                 </div>
                 <?php 
                 $secteurs = get_terms(array(

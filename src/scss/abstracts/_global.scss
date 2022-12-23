@@ -30,7 +30,9 @@ a {
 }
 
 .fade {
-	opacity: 0;
+	@media screen and (min-width: $lg) {
+		opacity: 0;
+	}
 }
 
 .screen-reader-text {

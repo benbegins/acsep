@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger)
 const animations = () => {
 	// Parallax
 	const parallaxElements = document.querySelectorAll("[data-parallax]")
-	if (parallaxElements) {
+	if (parallaxElements && window.innerWidth >= 1024) {
 		parallaxElements.forEach((element) => {
 			let speed
 
@@ -26,7 +26,7 @@ const animations = () => {
 
 	// Fade
 	const fadeElements = document.querySelectorAll(".fade")
-	if (fadeElements) {
+	if (fadeElements && window.innerWidth >= 1024) {
 		fadeElements.forEach((element) => {
 			let delay
 			let translate

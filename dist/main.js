@@ -551,6 +551,7 @@ const init = ()=>{
     (0, _animationsDefault.default)();
 };
 window.addEventListener("pageshow", init);
+window.addEventListener("resize", (0, _animationsDefault.default));
 // Smooth Scroll
 function raf(time) {
     (0, _lenisDefault.default).raf(time);
@@ -13749,7 +13750,7 @@ var _scrollTrigger = require("gsap/ScrollTrigger");
 const animations = ()=>{
     // Parallax
     const parallaxElements = document.querySelectorAll("[data-parallax]");
-    if (parallaxElements) parallaxElements.forEach((element)=>{
+    if (parallaxElements && window.innerWidth >= 1024) parallaxElements.forEach((element)=>{
         let speed;
         element.dataset.speed ? speed = element.dataset.speed : speed = 10;
         (0, _gsap.gsap).to(element, {
@@ -13763,7 +13764,7 @@ const animations = ()=>{
     });
     // Fade
     const fadeElements = document.querySelectorAll(".fade");
-    if (fadeElements) fadeElements.forEach((element)=>{
+    if (fadeElements && window.innerWidth >= 1024) fadeElements.forEach((element)=>{
         let delay;
         let translate;
         let duration;

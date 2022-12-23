@@ -13,7 +13,7 @@
                         <?php _e('Grâce à notre expertise, nous vous assurons un accompagnement Logistique et IT qui tient compte de votre métier, de vos exigences et de vos contraintes', 'acsep') ?>
                     </p>
                     <div class="fade" data-delay="0.15" data-translate="2">
-                        <a href="" class="btn-primary">
+                        <a href="<?php echo get_the_permalink(pll_get_post(get_page_by_path( 'la-societe' )->ID)); ?>" class="btn-primary">
                             <?php _e('Découvrez ACSEP', 'acsep' ) ?>
                         </a>
                     </div>
@@ -47,7 +47,7 @@
                     <h2 data-translate="2" class="text-xl lg:text-2xl font-extrabold"><?php _e('Facilitez la gestion de votre entrepôt avec notre solution IzyPro WMS', 'acsep'); ?></h2>
                     <div data-delay="0.2" class="flex flex-col items-start lg:flex-row lg:items-center lg:gap-6">
                         <a href="" class="btn-primary my-6"><?php _e('Découvrez IzyPro', 'acsep'); ?></a>
-                        <a href="" class="btn-secondary"><?php _e('Toutes nos solutions', 'acsep'); ?></a>
+                        <a href="<?php echo get_post_type_archive_link( 'solutions' ); ?>" class="btn-secondary"><?php _e('Toutes nos solutions', 'acsep'); ?></a>
                     </div>
                 </div>
 
@@ -134,8 +134,8 @@
                     <h2 class="section-title"><?php _e('Notre histoire', 'acsep'); ?></h2>
                     <p class="text-lg my-4"><?php _e('Depuis 2005, ACSEP accompagne ses clients sur l’amélioration de leur organisation logistique. ', 'acsep'); ?></p>
                     <div class="pt-2 flex flex-col items-start lg:flex-row lg:items-center">
-                        <a href="" class="btn-primary"><?php _e('Découvrez ACSEP', 'acsep'); ?></a>
-                        <a href="" class="btn-secondary mt-4 lg:mt-0 lg:ml-8"><?php _e('Rejoignez-nous', 'acsep'); ?></a>
+                        <a href="<?php echo get_the_permalink(pll_get_post(get_page_by_path( 'la-societe' )->ID)); ?>" class="btn-primary"><?php _e('Découvrez ACSEP', 'acsep'); ?></a>
+                        <a href="<?php echo get_post_type_archive_link( 'offres-emploi' ); ?>" class="btn-secondary mt-4 lg:mt-0 lg:ml-8"><?php _e('Rejoignez-nous', 'acsep'); ?></a>
                     </div>
                 </div>
 
@@ -192,7 +192,7 @@
                     ?>
                 </ul>
                 <div class="text-center mt-12">
-                    <a href="" class="btn-primary"><?php _e('Toutes nos références', 'acsep'); ?></a>
+                    <a href="<?php echo get_post_type_archive_link( 'clients' ); ?>" class="btn-primary"><?php _e('Toutes nos références', 'acsep'); ?></a>
                 </div>
             </div>
         </section>
