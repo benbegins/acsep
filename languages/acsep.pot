@@ -1,0 +1,458 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ACSEP\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-27 14:44+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.2; wp-6.0.2\n"
+"X-Domain: acsep"
+
+#. Name of the theme
+msgid "ACSEP"
+msgstr ""
+
+#: template-pages/page-contact.php:62
+msgid "ACSEP Iberia"
+msgstr ""
+
+#. Description of the theme
+msgid "ACSEP Theme"
+msgstr ""
+
+#: template-pages/page-societe.php:49
+msgid "ACSEP vise 3 objectifs majeurs"
+msgstr ""
+
+#: template-parts/item-actualite.php:17 template-parts/page-articles.php:79
+msgid "Actualités"
+msgstr ""
+
+#: header.php:159 footer.php:89 template-parts/page-articles.php:5
+msgid "Actualités & événements"
+msgstr ""
+
+#: search.php:118
+msgid "Articles"
+msgstr ""
+
+#: archive-offres-emploi.php:35
+msgid "Aucune offre d'emploi pour le moment."
+msgstr ""
+
+#. Author of the theme
+msgid "Bemy Studio"
+msgstr ""
+
+#: archive-offres-emploi.php:16
+msgid "Candidature spontanée"
+msgstr ""
+
+#: template-pages/page-contact.php:24
+msgid "cliquez ici"
+msgstr ""
+
+#: taxonomy-secteurs.php:47
+msgid "Comment ACSEP peut vous accompagner"
+msgstr ""
+
+#: template-pages/page-contact.php:24
+msgid ""
+"Conformément à la Loi Informatique et Libertés, vous disposez d’un droit "
+"d’accès, de rectification, de modification et de suppression des données qui "
+"vous concernent pour en savoir plus,"
+msgstr ""
+
+#: single-offres-emploi.php:52
+msgid ""
+"Conformément à la Loi Informatique et Libertés, vous disposez d’un droit "
+"d’accès, de rectification, de modification et de suppression des données qui "
+"vous concernent pour en savoir plus, cliquez ici"
+msgstr ""
+
+#: front-page.php:122 template-parts/section-contact-sm.php:9
+msgid "Contactez-nous"
+msgstr ""
+
+#: front-page.php:106
+msgid "Contactez-nous pour nous parler de vos besoins"
+msgstr ""
+
+#: template-parts/section-contact-sm.php:8
+msgid ""
+"Contactez-nous pour étudier ensemble la solution qui correspond le mieux à "
+"vos objectifs."
+msgstr ""
+
+#: front-page.php:135
+msgid ""
+"Depuis 2005, ACSEP accompagne ses clients sur l’amélioration de leur "
+"organisation logistique. "
+msgstr ""
+
+#: archive-services.php:69 front-page.php:72
+msgid "Des services adaptés à tous les secteurs d’activités"
+msgstr ""
+
+#: front-page.php:10
+msgid "Digitalisez <br>votre supply chain"
+msgstr ""
+
+#: front-page.php:17 front-page.php:137
+msgid "Découvrez ACSEP"
+msgstr ""
+
+#: archive-solutions.php:89 template-pages/page-izysuite.php:116
+msgid "Découvrez ce service"
+msgstr ""
+
+#: front-page.php:49
+msgid "Découvrez IzyPro"
+msgstr ""
+
+#: single-solutions.php:76
+msgid "Découvrez IzySuite"
+msgstr ""
+
+#: template-parts/page-articles.php:7
+msgid "Découvrez les dernières tendances de l’industrie."
+msgstr ""
+
+#: template-parts/section-offres.php:9
+msgid "Découvrez nos offres d’emploi"
+msgstr ""
+
+#: taxonomy-secteurs.php:138
+msgid "Découvrez nos références"
+msgstr ""
+
+#: template-pages/page-rh-humain.php:66
+msgid "Découvrez nos talents"
+msgstr ""
+
+#: single-solutions.php:113 taxonomy-secteurs.php:87 archive-solutions.php:32
+#: template-parts/item-solution.php:4 template-parts/item-izysuite.php:11
+#: template-parts/item-service.php:14
+msgid "Découvrir"
+msgstr ""
+
+#: search.php:144
+msgid ""
+"Désolé, mais rien ne correspond à vos termes de recherche. Veuillez "
+"réessayer avec d’autres mots-clés."
+msgstr ""
+
+#: template-pages/page-rh-humain.php:65
+msgid ""
+"Enfin, nous avons voulu mettre à l’honneur nos collaboratrices et "
+"collaborateurs à travers notre série “Les Talents d’ACSEP”."
+msgstr ""
+
+#: single-solutions.php:74
+msgid "Explorez tous les modules de notre suite IzySuite !"
+msgstr ""
+
+#: front-page.php:47
+msgid "Facilitez la gestion de votre entrepôt avec notre solution IzyPro WMS"
+msgstr ""
+
+#: template-pages/page-contact.php:43
+msgid "Groupe ACSEP"
+msgstr ""
+
+#: front-page.php:13
+msgid ""
+"Grâce à notre expertise, nous vous assurons un accompagnement Logistique et "
+"IT qui tient compte de votre métier, de vos exigences et de vos contraintes"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://bemy.studio"
+msgstr ""
+
+#: front-page.php:175
+msgid "Ils nous font confiance"
+msgstr ""
+
+#: template-pages/page-rh-humain.php:97
+msgid "Index égalité Femmes - Hommes"
+msgstr ""
+
+#. Name of the template
+msgid "IzySuite"
+msgstr ""
+
+#: header.php:156 header.php:183 footer.php:86
+msgid "La société"
+msgstr ""
+
+#: taxonomy-secteurs.php:136
+msgid ""
+"Le groupe ACSEP accompagne une centaine de clients actifs parmi lesquels "
+"Auchan, Boulanger, Carrefour, C-Log, DHL Supply Chain, Distrimag, Geodis, "
+"Habitat, ID Logistics, Lustucru, Metro, Panzani, Petit Bateau, Samsung "
+"Electronics France, Sonepar et XPO Logistics."
+msgstr ""
+
+#: template-parts/content-services-solutions.php:103
+msgid "Les experts d’ACSEP répondent à vos questions"
+msgstr ""
+
+#: template-parts/page-articles.php:95
+msgid "Lire la suite"
+msgstr ""
+
+#: archive-solutions.php:86
+msgid "L’intégration clés en main"
+msgstr ""
+
+#: archive-solutions.php:87
+msgid ""
+"L’intégration est l’un des premiers métiers d’ACSEP. Ainsi, notre équipe "
+"intègre indifféremment nos propres logiciels comme IzySuite et le WMS IzyPro,"
+" mais aussi celles de nos éditeurs partenaires."
+msgstr ""
+
+#: footer.php:174
+msgid "Mentions légales"
+msgstr ""
+
+#: single-services.php:65
+msgid "Nos autres services"
+msgstr ""
+
+#: single-solutions.php:100 template-pages/page-izysuite.php:140
+msgid "Nos autres solutions"
+msgstr ""
+
+#: template-pages/page-temoignages.php:17
+msgid "Nos collaborateurs ont du talent."
+msgstr ""
+
+#: front-page.php:252
+msgid "Nos dernières actualités"
+msgstr ""
+
+#: archive-offres-emploi.php:12
+msgid "Nos offres du moment"
+msgstr ""
+
+#: archive-clients.php:12 header.php:162 taxonomy-secteurs.php:135
+#: footer.php:92
+msgid "Nos références"
+msgstr ""
+
+#: template-parts/section-slider-services.php:14
+msgid "Nos services"
+msgstr ""
+
+#: taxonomy-secteurs.php:78
+msgid "Nos solutions"
+msgstr ""
+
+#: archive-solutions.php:10
+msgid "Nos solutions logicielles pour développer votre Supply Chain"
+msgstr ""
+
+#: front-page.php:134
+msgid "Notre histoire"
+msgstr ""
+
+#: single-solutions.php:112 taxonomy-secteurs.php:86 archive-solutions.php:31
+msgid ""
+"Notre suite logicielle IzySuite constituée de 7 solutions qui participent "
+"activement au développement de votre supply chain."
+msgstr ""
+
+#: archive-clients.php:14
+msgid "Nous accompagnons plus de 150 entreprises de tous les secteurs"
+msgstr ""
+
+#: archive-offres-emploi.php:14
+msgid ""
+"Nous assemblons l’équipe la plus innovante en matière de logistique pour "
+"réinventer la façon dont le monde bouge."
+msgstr ""
+
+#: template-parts/section-offres.php:8
+msgid ""
+"Nous assemblons l’équipe la plus innovante en matière de logistique pour "
+"réinventer la façon dont le monde bouge. Prêt à faire avancer votre carrière "
+"avec une équipe collaborative et passionnée?"
+msgstr ""
+
+#: front-page.php:114
+msgid "Nous construisons le plan de déploiement de la solution"
+msgstr ""
+
+#: template-pages/page-izysuite.php:114
+msgid ""
+"Nous créons aussi des solutions logicielles clés en main. ACSEP prend en "
+"charge le développement et la maintenance de ces applications, quelle que "
+"soit la cible technique (application web, windows, mobile…), que ce soit "
+"pour créer une application de toute pièce ou une extension au SI existant."
+msgstr ""
+
+#: front-page.php:118
+msgid "Nous déployons la solution et adaptons si besoin"
+msgstr ""
+
+#: front-page.php:99
+msgid "Nous vous accompagnons sur vos projets d’optimisation logistique ou IT."
+msgstr ""
+
+#: template-parts/section-offres.php:7
+msgid "Nous vous avons gardé une place !"
+msgstr ""
+
+#: front-page.php:110
+msgid "Nous étudions ensemble les meilleures solutions"
+msgstr ""
+
+#: header.php:195 header.php:216 footer.php:95
+msgid "Offres d'emploi"
+msgstr ""
+
+#: 404.php:17
+msgid "Oups ! La page que vous avez demandée n’existe pas…"
+msgstr ""
+
+#. Name of the template
+msgid "Page Contact"
+msgstr ""
+
+#. Name of the template
+msgid "Page RH - Humain"
+msgstr ""
+
+#. Name of the template
+msgid "Page Société"
+msgstr ""
+
+#. Name of the template
+msgid "Page texte"
+msgstr ""
+
+#: archive-services.php:15 single-solutions.php:22 search.php:145
+#: header.php:237 taxonomy-secteurs.php:27 archive-solutions.php:15
+#: footer.php:9 single-services.php:22 template-pages/page-izysuite.php:27
+msgid "Parlez à un expert"
+msgstr ""
+
+#: front-page.php:98 template-parts/section-contact-sm.php:7
+msgid "Parlons-nous !"
+msgstr ""
+
+#: footer.php:175
+msgid "Politique de confidentialité"
+msgstr ""
+
+#: single-offres-emploi.php:48
+msgid ""
+"Postulez à cette offre et rejoignez une entreprise et une équipe à taille "
+"humaine !"
+msgstr ""
+
+#: archive-offres-emploi.php:15
+msgid ""
+"Prêt à faire avancer votre carrière avec une équipe collaborative et "
+"passionnée ? Consultez nos offres du moment ou envoyez-nous votre "
+"candidature spontanée."
+msgstr ""
+
+#: header.php:225
+msgid "Que cherchez-vous ?"
+msgstr ""
+
+#: header.php:189 header.php:192 front-page.php:138
+msgid "Rejoignez-nous"
+msgstr ""
+
+#: single-offres-emploi.php:14
+msgid "Retour aux offres"
+msgstr ""
+
+#: 404.php:18
+msgid "Retour à la page d’accueil"
+msgstr ""
+
+#: search.php:31
+msgid "résultat pour"
+msgstr ""
+
+#: search.php:33
+msgid "résultats pour"
+msgstr ""
+
+#: footer.php:122
+msgid "Secteurs d'activités"
+msgstr ""
+
+#: search.php:74 header.php:66 header.php:69 footer.php:16
+msgid "Services"
+msgstr ""
+
+#: search.php:96 header.php:104 header.php:107 footer.php:45
+msgid "Solutions"
+msgstr ""
+
+#: archive-solutions.php:12
+msgid ""
+"Spécialiste de la Supply Chain digitale, ACSEP accompagne depuis 2005 ses "
+"clients dans l’amélioration de leur performance logistique."
+msgstr ""
+
+#: archive-services.php:12
+msgid ""
+"Spécialiste de la Supply Chain digitale, ACSEP accompagne depuis 2005 ses "
+"clients dans l’amélioration de leur performance logistique."
+msgstr ""
+
+#: header.php:98
+msgid "Tous nos services"
+msgstr ""
+
+#: single-actualites.php:128 front-page.php:267
+msgid "Tous nos événements & actus"
+msgstr ""
+
+#: template-parts/page-articles.php:17
+msgid "Toutes les catégories"
+msgstr ""
+
+#: front-page.php:195
+msgid "Toutes nos références"
+msgstr ""
+
+#: header.php:144 front-page.php:50
+msgid "Toutes nos solutions"
+msgstr ""
+
+#. Name of the template
+#: front-page.php:209
+msgid "Témoignages"
+msgstr ""
+
+#: archive-services.php:10
+msgid "Un accompagnement Supply Chain à 360°"
+msgstr ""
+
+#: template-parts/item-offre-emploi.php:29
+msgid "Voir l'offre"
+msgstr ""
+
+#: archive-offres-emploi.php:36
+msgid "Vous pouvez néanmoins nous envoyer une candidature spontanée."
+msgstr ""
+
+#: single-actualites.php:86
+msgid "À lire aussi"
+msgstr ""
