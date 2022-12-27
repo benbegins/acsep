@@ -49,6 +49,31 @@
             </div>
         </section>
         <?php endif; ?>
+
+        
+        <!-- Section Liste 2 colonnes -->
+        <?php 
+        if(get_row_layout() == 'liste_2_colonnes'):
+            $title = get_sub_field('liste_2_colonnes_titre');
+            $items = get_sub_field('liste_2_colonnes_items');
+        ?>
+        <section class='pb-section-mobile lg:pb-section'>
+            <div class="container">
+                <h2 class="section-title-sm"><?= $title; ?></h2>
+                <div class="lg:grid grid-cols-6">
+                    <div class="mt-6 lg:mt-8 lg:col-span-3 lg:col-start-3">
+                        <ul class="liste_2_colonnes lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-3">
+                            <?php 
+                            foreach($items as $item):
+                            ?>
+                            <li><?= $item['element']; ?></li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <?php endif; ?>
        
        
        

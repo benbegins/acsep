@@ -40,13 +40,22 @@
 
 
         <!-- IzyPro -->
+        <?php 
+        $args = array(
+            'post_type'=>'solutions',
+            'name'=>'izypro'
+        );
+        $izypro = get_posts( $args )[0];
+        // Check if post exist in current language
+        if(pll_get_post($izypro->ID)):
+        ?>
         <section class="relative">
             <div class="container md:grid md:grid-cols-2 md:items-center md:gap-8  min-h-[28vw]">
 
                 <div class="md:col-start-2 md:row-start-1 mb-12 md:mb-0 md:py-16 lg:w-5/6 lg:ml-auto lg:py-24">
                     <h2 data-translate="2" class="text-xl lg:text-2xl font-extrabold"><?php _e('Facilitez la gestion de votre entrepôt avec notre solution IzyPro WMS', 'acsep'); ?></h2>
                     <div data-delay="0.2" class="flex flex-col items-start lg:flex-row lg:items-center lg:gap-6">
-                        <a href="" class="btn-primary my-6"><?php _e('Découvrez IzyPro', 'acsep'); ?></a>
+                        <a href="<?= get_the_permalink(pll_get_post($izypro->ID)); ?>" class="btn-primary my-6"><?php _e('Découvrez IzyPro', 'acsep'); ?></a>
                         <a href="<?php echo get_post_type_archive_link( 'solutions' ); ?>" class="btn-secondary"><?php _e('Toutes nos solutions', 'acsep'); ?></a>
                     </div>
                 </div>
@@ -57,6 +66,7 @@
 
             </div>
         </section>
+        <?php endif; ?>
 
 
         <!-- Secteurs d'activités -->
@@ -183,7 +193,7 @@
                         $delay = $key * 0.05;
                     ?>
                     <li class="text-center" data-delay="<?= $delay; ?>">
-                        <a class="inline-block h-12 lg:h-16 xl:h-20 saturate-0 opacity-50 hover:saturate-100 hover:opacity-100 transition duration-200" href="<?= $permalink; ?>">
+                        <a class="inline-block h-12 max-w-[75%] lg:h-16 xl:h-20 saturate-0 opacity-50 hover:saturate-100 hover:opacity-100 transition duration-200" href="<?= $permalink; ?>">
                             <?= wp_get_attachment_image($logo, 'medium', '', array('class' => 'object-contain object-center w-full h-full mx-auto')); ?>
                         </a>
                     </li>

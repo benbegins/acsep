@@ -543,8 +543,16 @@ img, video {
   max-width: 48rem;
 }
 
+.max-w-\[75\%\] {
+  max-width: 75%;
+}
+
 .max-w-\[250px\] {
   max-width: 250px;
+}
+
+.max-w-\[45\%\] {
+  max-width: 45%;
 }
 
 .transform {
@@ -730,6 +738,10 @@ img, video {
   object-position: center;
 }
 
+.object-left {
+  object-position: left;
+}
+
 .p-6 {
   padding: 1.5rem;
 }
@@ -788,12 +800,12 @@ img, video {
   padding-top: 1.5rem;
 }
 
-.pt-section-mobile {
-  padding-top: 80px;
-}
-
 .pb-section-mobile {
   padding-bottom: 80px;
+}
+
+.pt-section-mobile {
+  padding-top: 80px;
 }
 
 .pt-12 {
@@ -2090,6 +2102,7 @@ a {
 .faq__item .question {
   cursor: pointer;
   padding-bottom: .5rem;
+  padding-right: 50px;
   transition: color .25s;
   position: relative;
 }
@@ -2101,7 +2114,7 @@ a {
   background: url("icon-faq.e493e6d4.svg") 50% / contain no-repeat;
   transition: transform .5s cubic-bezier(.33, 0, 0, 1);
   position: absolute;
-  top: 2px;
+  top: calc(50% - 14px);
   right: 0;
 }
 
@@ -2387,6 +2400,10 @@ a {
   }
 }
 
+.hero-clients {
+  background: url("back-racks.17b52103.jpg") bottom / cover no-repeat;
+}
+
 .section-contact {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -2413,15 +2430,16 @@ a {
 .list-icones__item {
   --spacing: 1.5rem;
   --size: 50%;
-  flex: 0 0 calc(var(--size)  - var(--spacing));
   margin: calc(var(--spacing) / 2);
   text-align: center;
+  width: calc(var(--size)  - var(--spacing));
   background: #f8f9fa;
   border-bottom: 8px solid #cb2a6e;
   border-radius: .5rem;
   flex-direction: column;
   align-items: center;
   padding: 1.5rem 1rem;
+  line-height: 1.25;
   display: flex;
   box-shadow: 0 5px 18px #18263026;
 }
@@ -2467,6 +2485,7 @@ a {
   border-radius: .5rem;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 1.5rem;
   padding: 1.5rem 1rem;
   display: flex;
   box-shadow: 0 5px 18px #18263026;
@@ -2474,6 +2493,7 @@ a {
 
 @media screen and (min-width: 1024px) {
   .list-icones-societe__item {
+    margin-bottom: 0;
     padding: 2rem;
   }
 }
@@ -2998,6 +3018,10 @@ a {
 
   .lg\:gap-y-16 {
     row-gap: 4rem;
+  }
+
+  .lg\:gap-y-3 {
+    row-gap: .75rem;
   }
 
   .lg\:divide-y-0 > :not([hidden]) ~ :not([hidden]) {

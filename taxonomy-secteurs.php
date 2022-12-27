@@ -67,7 +67,8 @@ $content = get_field("content", "secteurs_" . $term->term_id);
         $args = array(
             'post_type' => 'solutions',
             'orderby'=>'menu_order',
-            'order'=>'ASC'
+            'order'=>'ASC',
+            'posts_per_page' => -1
         );
         $solutions = new WP_Query($args);
         if($solutions->have_posts()): 

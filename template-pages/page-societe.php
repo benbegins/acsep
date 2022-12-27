@@ -146,6 +146,89 @@ get_header();
         </section>
 
 
+        <!-- Offres d'emploi -->
+        <?php 
+        $args= array(
+            'post_type'=>'offres-emploi',
+        );
+        $offres = new WP_Query($args);
+        if($offres->posts):
+        ?>
+
+            <div class="pb-section-mobile lg:pb-section">
+                <?php get_template_part( '/template-parts/section-offres' ); ?>
+            </div>
+
+        <?php
+            endif;
+        ?>
+
+
+
+        <!-- Êcosystème -->
+        <section class="pb-section-mobile lg:pb-section">
+            <div class="container text-center">
+                <div class="lg:w-1/2 lg:mx-auto">
+                    <h2 class="text-2xl font-extrabold mb-6"><?php _e('Notre ecosystème', 'acsep'); ?></h2>
+                    <h3 class="text-lg mb-6"><?php _e('Des partenaires professionnels et leaders sur leur marché !', 'acsep'); ?></h3>
+                    <p class="mb-6"><?php _e('Parce que nous ne voulons pas réinventer ce que d’autres font très bien et parce qu’à plusieurs nous sommes souvent plus compétents, nous nous sommes entourés de partenaires qui ont toute notre confiance.', 'acsep'); ?></p>
+                    <p><?php _e('Pour construire notre écosystème, nous nous sommes associés à des partenaires de qualité afin de proposer des solutions et des services de premier ordre.', 'acsep'); ?></p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Partenaires -->
+        <?php 
+        $partenaires = get_field('partenaires');
+        if($partenaires):
+        ?>
+        <section class='pb-section-mobile lg:pb-section'>
+            <div class="container">
+                <ul class="grid md:grid-cols-2 md:gap-x-6 gap-y-12 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
+                    <?php 
+                    foreach($partenaires as $partenaire):
+                    ?>
+                    <li>
+                        <div class="h-12 max-w-[45%] lg:h-16 xl:h-20">
+                            <?php echo wp_get_attachment_image($partenaire['logo'], 'medium', '', array('class' => 'object-contain object-left w-full h-full')); ?>
+                        </div>
+                        <p class="mt-6 mb-3"><?= $partenaire['presentation']; ?></p>
+                        <?php 
+                        if($partenaire['lien']):
+                        ?>
+                        <a target="_blank" href="<?= $partenaire['lien']; ?>" class="btn-secondary"><?php _e('En savoir plus', 'acsep'); ?></a>
+                        <?php endif; ?>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+        </section>
+        <?php endif; ?>
+
+
+        <!-- Focus  -->
+        <?php 
+        $focus = get_field('focus_partenaire');
+        if($focus['titre']):
+        ?>
+        <section class='pb-section-mobile lg:pb-section'>
+            <div class="container flex flex-col-reverse md:grid md:grid-cols-2 md:gap-8 md:items-center">
+                <div class="lg:w-5/6">
+                    <h2 class="text-xl font-extrabold"><?= $focus['titre']; ?></h2>
+                    <p class="mt-6"><?= $focus['presentation']; ?></p>
+                    <?php if($focus['lien']): ?>
+                    <a href="<?= $focus['lien']; ?>" class="btn-secondary mt-6"><?php _e('En savoir plus', 'acsep'); ?></a>
+                    <?php endif; ?>
+                </div>
+                <div class="mb-6 md:mb-0">
+                    <?php echo wp_get_attachment_image($focus['image'], 'large', '', array('class'=>'rounded-xl')); ?>
+                </div>
+            </div>
+        </section>
+        <?php endif; ?>
+
+
         <!-- Contact -->
         <?php 
         get_template_part( 'template-parts/section-contact-sm' );

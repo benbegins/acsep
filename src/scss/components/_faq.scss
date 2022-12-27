@@ -4,6 +4,7 @@
 
 		.question {
 			@apply pb-2;
+			padding-right: 50px;
 			position: relative;
 			cursor: pointer;
 			transition: color 0.25s;
@@ -11,7 +12,8 @@
 			&::after {
 				content: "";
 				@apply absolute right-0;
-				top: 2px;
+				// top: 2px;
+				top: calc(50% - 14px);
 				width: 25px;
 				height: 25px;
 				background: url("/src/img/icon-faq.svg") center center no-repeat;

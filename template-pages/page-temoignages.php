@@ -49,8 +49,8 @@ get_header();
             </div>
         </section>
 
-         <!-- Offres d'emploi -->
-         <?php 
+        <!-- Offres d'emploi -->
+        <?php 
         $args= array(
             'post_type'=>'offres-emploi',
         );

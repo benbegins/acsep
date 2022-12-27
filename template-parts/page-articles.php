@@ -47,9 +47,13 @@
 <!-- Liste articles -->
 <section class='py-section-mobile lg:py-section'>
     <div class="container">
-        <ul class="list-articles grid md:gap-x-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-x-8">
         <?php 
         if(have_posts()):
+        ?>
+        
+        <ul class="list-articles grid md:gap-x-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-x-8">
+
+        <?php
             $index = 0;
 
             while(have_posts()):
@@ -113,10 +117,25 @@
         <?php 
                 endif;
             endwhile;
-        endif;
-        
-        ?>    
+            ?>
+
         </ul>
+
+        <?php
+        else:
+        ?>
+
+        <div class="text-center text-lg">
+            <?php _e('Pas d\'articles à afficher', 'acsep'); ?>
+            <div class="mt-3">
+                <a href="<?= get_site_url(); ?>" class="btn-primary"><?php _e('Retour à l\'accueil', 'acsep'); ?></a>
+            </div>
+        </div>
+
+        <?php
+        endif;
+        ?>    
+        
 
         <div class="pagination">
             <?php 

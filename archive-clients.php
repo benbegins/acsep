@@ -6,8 +6,8 @@ get_header();
         
     
          <!-- Hero -->
-         <section class='pt-section-mobile lg:pt-section relative'>
-            <div class="container pt-section-mobile lg:pt-section lg:text-center">
+         <section class='hero-clients py-section-mobile lg:py-section relative'>
+            <div class="container py-section-mobile lg:py-section lg:text-center">
                 <h1 class="fade font-extrabold text-xl sm:text-2xl lg:text-3xl" data-translate="2">
                     <?php _e('Nos références', 'acsep') ?>
                 </h1>
@@ -17,16 +17,18 @@ get_header();
 
         
         <!-- Liste clients -->
-        <section class='fade py-section-mobile lg:py-section' data-delay="0.5">
+        <section class='fade pb-section-mobile lg:pb-section' data-delay="0.5">
             <div class="container">
                 <?php 
-                global $wp_query;
-                $clients = $wp_query->posts;
-                // var_dump($clients);
+                $args = array(
+                    'post_type' => 'clients',
+                    'posts_per_page' => -1
+                );
+                $query_clients = new WP_Query($args);
+                $clients = $query_clients->posts;
 
                 $secteurs = get_terms(array(
                     'taxonomy'      => 'secteurs',
-                    // 'hide_empty'    => false,
                 ));
 
                 foreach ($secteurs as $secteur):
