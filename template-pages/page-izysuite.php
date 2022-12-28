@@ -66,7 +66,7 @@ get_header();
         ?>
         <section class='py-section-mobile lg:py-section'>
             <div class="container">
-                <ul class="md:grid md:grid-cols-2 md:gap-x-6 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
+                <ul class="grid md:grid-cols-2 gap-y-12 gap-x-6 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-16">
                     <?php
                     while($solutions->have_posts()):
                         $solutions->the_post();
