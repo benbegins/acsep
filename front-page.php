@@ -193,7 +193,7 @@
                         $delay = $key * 0.05;
                     ?>
                     <li class="text-center" data-delay="<?= $delay; ?>">
-                        <a class="inline-block h-12 max-w-[75%] lg:h-16 xl:h-20 saturate-0 opacity-50 hover:saturate-100 hover:opacity-100 transition duration-200" href="<?= $permalink; ?>">
+                        <a class="inline-block h-12 max-w-[60%] lg:h-16 xl:h-20 saturate-0 opacity-50 hover:saturate-100 hover:opacity-100 transition duration-200" href="<?= $permalink; ?>">
                             <?= wp_get_attachment_image($logo, 'medium', '', array('class' => 'object-contain object-center w-full h-full mx-auto')); ?>
                         </a>
                     </li>
