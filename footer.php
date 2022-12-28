@@ -161,7 +161,7 @@
 
             <!-- Logo -->
             <div class="mt-12 lg:mt-0">
-                <a href="<?= get_site_url(); ?>"><img class="w-40 lg:w-2/3 lg:ml-auto" src="<?= get_template_directory_uri() ?>/src/img/logo-acsep-white.svg" alt="Logo ACSEP"></a>
+                <a href="<?= pll_home_url(); ?>"><img class="w-40 lg:w-2/3 lg:ml-auto" src="<?= get_template_directory_uri() ?>/src/img/logo-acsep-white.svg" alt="Logo ACSEP"></a>
             </div>
         </div>
 

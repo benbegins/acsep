@@ -49,7 +49,7 @@
         <div class="main-nav py-3">
             <div class="container relative flex justify-between items-center">
                 <div>
-                    <a href="<?= get_site_url(); ?>"><img src="<?= get_template_directory_uri() ?>/src/img/logo-acsep.svg" alt="Logo ACSEP" width="140"></a>
+                    <a href="<?= pll_home_url(); ?>"><img src="<?= get_template_directory_uri() ?>/src/img/logo-acsep.svg" alt="Logo ACSEP" width="140"></a>
                 </div>
                 <button class="burger">
                     <div class="line line-1"></div>

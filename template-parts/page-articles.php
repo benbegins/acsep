@@ -128,7 +128,7 @@
         <div class="text-center text-lg">
             <?php _e('Pas d\'articles à afficher', 'acsep'); ?>
             <div class="mt-3">
-                <a href="<?= get_site_url(); ?>" class="btn-primary"><?php _e('Retour à l\'accueil', 'acsep'); ?></a>
+                <a href="<?= pll_home_url(); ?>" class="btn-primary"><?php _e('Retour à l\'accueil', 'acsep'); ?></a>
             </div>
         </div>
 
