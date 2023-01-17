@@ -4,7 +4,7 @@ $term = $wp_query->queried_object;
 
 $photo = get_field("photo", "secteurs_" . $term->term_id);
 $intro = get_field("intro", "secteurs_" . $term->term_id);
-$content = get_field("content", "secteurs_" . $term->term_id);
+$content = get_field("contenu", "secteurs_" . $term->term_id);
 ?>
 
     <div class="page-services">
@@ -41,18 +41,26 @@ $content = get_field("content", "secteurs_" . $term->term_id);
         </section>  
 
 
-        <?php if($content): ?>
+        <?php 
+        if($content):
+            foreach($content as $section):
+                $titre = $section['contenu_titre'];
+                $paragraphe = $section['contenu_paragraphe'];
+        ?>
         <section class='pb-section-mobile lg:pb-section relative'>
             <div class="container">
-                <h2 class="section-title-sm"><?php _e('Comment ACSEP peut vous accompagner', 'acsep'); ?></h2>
+                <h2 class="section-title-sm"><?= $titre; ?></h2>
                 <div class="lg:grid grid-cols-6">
                     <div class="texte-enrichi mt-6 lg:mt-8 lg:col-span-3 lg:col-start-3">
-                        <?= $content; ?>
+                        <?= $paragraphe; ?>
                     </div>
                 </div>
             </div>
         </section>
-        <?php endif; ?>
+        <?php 
+            endforeach;
+        endif; 
+        ?>
 
 
 

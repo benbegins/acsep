@@ -42,12 +42,12 @@ get_header();
                     <div class="py-8 px-6 md:grid md:grid-cols-2">
                         <h2 class="font-extrabold text-xl mb-3"><?php _e('Groupe ACSEP', 'acsep'); ?></h2>
                         <div>
-                            <p class="mb-3">Siège social  <br>
+                            <p class="mb-3"><?php _e('Siège social', 'acsep'); ?>  <br>
                                 Bâtiment A - Parc Cézanne 1 <br>
                                 380 avenue Archimède <br>
                                 13857 Aix-en-Provence Cedex 3 <br>
                                 France</p>
-                            <p>Tél. : +33 (0) 4 42 50 96 48</p>
+                            <p>Tel. : +33 (0) 4 42 50 96 48</p>
                         </div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@ get_header();
                                 28108 Alcobendas <br>
                                 Madrid <br>
                                 Spain</p>
-                            <p>Tél. : +33 (0) 4 42 50 96 48</p>
+                            <p>Tel. : +33 (0) 4 42 50 96 48</p>
                         </div>
                     </div>
                 </div>
