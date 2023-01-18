@@ -129,8 +129,11 @@
 					margin-right: 0.75rem;
 
 					&::after {
+						width: 13px;
+						height: 9px;
+						top: calc(50% - 3px);
 						background: url("/src/img/icon-submenu.svg");
-						background-size: 13px 13px;
+						background-size: 13px 9px;
 						transition: transform 0.25s ease;
 					}
 
