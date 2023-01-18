@@ -47,7 +47,7 @@ const animations = () => {
 			gsap.fromTo(
 				element,
 				{
-					oapcity: 0,
+					opacity: 0,
 					y: translate,
 				},
 				{

@@ -70,3 +70,11 @@ function mytheme_custom_excerpt_length( $length ) {
     return 30;
 }
 add_filter( 'excerpt_length', 'mytheme_custom_excerpt_length', 999 );
+
+
+// Remove Articles & Commentaires from admin bar
+function post_remove (){ 
+   remove_menu_page('edit.php');
+   remove_menu_page( 'edit-comments.php' );
+}
+add_action('admin_menu', 'post_remove'); 

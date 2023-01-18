@@ -43,6 +43,9 @@ get_header();
             </div>
         </section>
 
+        <!-- Candidature Spontanée -->
+        <?php get_template_part('/template-parts/form-job'); ?>
+
 
     </div>
 

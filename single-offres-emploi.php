@@ -29,7 +29,7 @@ get_header();
                         ?>
                     </div>
                     <?php endif; ?>
-                    <h1 class="fade text-pink font-extrabold text-xl sm:text-2xl">
+                    <h1 class="job-title fade text-pink font-extrabold text-xl sm:text-2xl">
                         <?php the_title(); ?>
                     </h1>
                     <div class="fade texte-enrichi accroche mt-12">
@@ -41,18 +41,14 @@ get_header();
 
 
         <!-- Formulaire -->
-        <section class='bg-gradient-pink py-section-mobile lg:py-section relative'>
-            <div class="container text-light">
-                <h2 class="text-xl text-center font-extrabold sm:text-2xl lg:w-1/2 lg:mx-auto"><?php the_title(); ?></h2>
-                <div class="mt-6 lg:w-1/3 lg:mx-auto">
-                    <h3 class="text-lg text-center"><?php _e('Postulez à cette offre et rejoignez une entreprise et une équipe à taille humaine !', 'acsep'); ?></h3>
-                    <div class="form">
-
-                    </div>
-                    <p class="text-sm opacity-50 mt-6"><?php _e('Conformément à la Loi Informatique et Libertés, vous disposez d’un droit d’accès, de rectification, de modification et de suppression des données qui vous concernent pour en savoir plus, cliquez ici', 'acsep'); ?></p>
-                </div>
-            </div>
-        </section>
+        <?php 
+        $args = array(
+            'title' => get_the_title(),
+        );
+        
+        get_template_part('/template-parts/form-job', '', $args); 
+        
+        ?>
 
 
     </div>

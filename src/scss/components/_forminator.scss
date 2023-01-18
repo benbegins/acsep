@@ -56,6 +56,16 @@
 			line-height: 12px;
 		}
 	}
+
+	// Upload description
+	.forminator-description {
+		@apply text-sm italic opacity-50 block text-right mt-2;
+	}
+
+	// Submit
+	.forminator-button-submit {
+		@apply mt-6;
+	}
 }
 
 // 2 Cols
@@ -67,4 +77,9 @@
 			margin-bottom: 0 !important;
 		}
 	}
+}
+
+// Champ offre
+.form-job-offre {
+	@apply opacity-50 pointer-events-none invisible h-0;
 }

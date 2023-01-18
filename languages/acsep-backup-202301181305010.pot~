@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ACSEP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-18 13:05+0000\n"
+"POT-Creation-Date: 2022-12-27 15:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -52,19 +52,30 @@ msgstr ""
 msgid "Bemy Studio"
 msgstr ""
 
-#: archive-offres-emploi.php:16 template-parts/form-job.php:2
+#: archive-offres-emploi.php:16
 msgid "Candidature spontanée"
 msgstr ""
 
-#: template-parts/form-job.php:34 template-pages/page-contact.php:24
+#: template-pages/page-contact.php:24
 msgid "cliquez ici"
 msgstr ""
 
-#: template-parts/form-job.php:34 template-pages/page-contact.php:24
+#: taxonomy-secteurs.php:47
+msgid "Comment ACSEP peut vous accompagner"
+msgstr ""
+
+#: template-pages/page-contact.php:24
 msgid ""
 "Conformément à la Loi Informatique et Libertés, vous disposez d’un droit "
 "d’accès, de rectification, de modification et de suppression des données qui "
 "vous concernent pour en savoir plus,"
+msgstr ""
+
+#: single-offres-emploi.php:52
+msgid ""
+"Conformément à la Loi Informatique et Libertés, vous disposez d’un droit "
+"d’accès, de rectification, de modification et de suppression des données qui "
+"vous concernent pour en savoir plus, cliquez ici"
 msgstr ""
 
 #: front-page.php:132 template-parts/section-contact-sm.php:9
@@ -85,10 +96,6 @@ msgstr ""
 msgid ""
 "Depuis 2005, ACSEP accompagne ses clients sur l’amélioration de leur "
 "organisation logistique. "
-msgstr ""
-
-#: template-pages/page-societe.php:173
-msgid "Des partenaires professionnels et leaders sur leur marché !"
 msgstr ""
 
 #: archive-services.php:69 front-page.php:82
@@ -123,7 +130,7 @@ msgstr ""
 msgid "Découvrez nos offres d’emploi"
 msgstr ""
 
-#: taxonomy-secteurs.php:147
+#: taxonomy-secteurs.php:139
 msgid "Découvrez nos références"
 msgstr ""
 
@@ -131,7 +138,7 @@ msgstr ""
 msgid "Découvrez nos talents"
 msgstr ""
 
-#: single-solutions.php:113 taxonomy-secteurs.php:96 archive-solutions.php:32
+#: single-solutions.php:113 taxonomy-secteurs.php:88 archive-solutions.php:32
 #: template-parts/item-solution.php:4 template-parts/item-izysuite.php:11
 #: template-parts/item-service.php:14
 msgid "Découvrir"
@@ -141,10 +148,6 @@ msgstr ""
 msgid ""
 "Désolé, mais rien ne correspond à vos termes de recherche. Veuillez "
 "réessayer avec d’autres mots-clés."
-msgstr ""
-
-#: template-pages/page-societe.php:200 template-pages/page-societe.php:221
-msgid "En savoir plus"
 msgstr ""
 
 #: template-pages/page-rh-humain.php:65
@@ -191,7 +194,7 @@ msgstr ""
 msgid "La société"
 msgstr ""
 
-#: taxonomy-secteurs.php:145
+#: taxonomy-secteurs.php:137
 msgid ""
 "Le groupe ACSEP accompagne une centaine de clients actifs parmi lesquels "
 "Auchan, Boulanger, Carrefour, C-Log, DHL Supply Chain, Distrimag, Geodis, "
@@ -242,7 +245,7 @@ msgstr ""
 msgid "Nos offres du moment"
 msgstr ""
 
-#: archive-clients.php:12 header.php:162 taxonomy-secteurs.php:144
+#: archive-clients.php:12 header.php:162 taxonomy-secteurs.php:136
 #: footer.php:92
 msgid "Nos références"
 msgstr ""
@@ -251,7 +254,7 @@ msgstr ""
 msgid "Nos services"
 msgstr ""
 
-#: taxonomy-secteurs.php:87
+#: taxonomy-secteurs.php:79
 msgid "Nos solutions"
 msgstr ""
 
@@ -259,15 +262,11 @@ msgstr ""
 msgid "Nos solutions logicielles pour développer votre Supply Chain"
 msgstr ""
 
-#: template-pages/page-societe.php:172
-msgid "Notre ecosystème"
-msgstr ""
-
 #: front-page.php:144
 msgid "Notre histoire"
 msgstr ""
 
-#: single-solutions.php:112 taxonomy-secteurs.php:95 archive-solutions.php:31
+#: single-solutions.php:112 taxonomy-secteurs.php:87 archive-solutions.php:31
 msgid ""
 "Notre suite logicielle IzySuite constituée de 7 solutions qui participent "
 "activement au développement de votre supply chain."
@@ -342,13 +341,6 @@ msgstr ""
 msgid "Page texte"
 msgstr ""
 
-#: template-pages/page-societe.php:174
-msgid ""
-"Parce que nous ne voulons pas réinventer ce que d’autres font très bien et "
-"parce qu’à plusieurs nous sommes souvent plus compétents, nous nous sommes "
-"entourés de partenaires qui ont toute notre confiance."
-msgstr ""
-
 #: archive-services.php:15 single-solutions.php:22 search.php:145
 #: header.php:237 taxonomy-secteurs.php:27 archive-solutions.php:15
 #: footer.php:9 single-services.php:22 template-pages/page-izysuite.php:27
@@ -367,17 +359,10 @@ msgstr ""
 msgid "Politique de confidentialité"
 msgstr ""
 
-#: template-parts/form-job.php:4
+#: single-offres-emploi.php:48
 msgid ""
 "Postulez à cette offre et rejoignez une entreprise et une équipe à taille "
-"humaine !"
-msgstr ""
-
-#: template-pages/page-societe.php:175
-msgid ""
-"Pour construire notre écosystème, nous nous sommes associés à des "
-"partenaires de qualité afin de proposer des solutions et des services de "
-"premier ordre."
+"humaine !"
 msgstr ""
 
 #: archive-offres-emploi.php:15
@@ -423,10 +408,6 @@ msgstr ""
 msgid "Services"
 msgstr ""
 
-#: template-pages/page-contact.php:45
-msgid "Siège social"
-msgstr ""
-
 #: search.php:96 header.php:104 header.php:107 footer.php:45
 msgid "Solutions"
 msgstr ""
@@ -470,10 +451,6 @@ msgstr ""
 
 #: archive-services.php:10
 msgid "Un accompagnement Supply Chain à 360°"
-msgstr ""
-
-#: template-parts/form-job.php:5
-msgid "Une réponse sera apportée à toutes les demandes."
 msgstr ""
 
 #: template-parts/item-offre-emploi.php:29
