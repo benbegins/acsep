@@ -183,7 +183,7 @@
         <section class='pb-section-mobile lg:pb-section'>
             <div class="container">
                 <h2 class="section-title"><?php _e('Ils nous font confiance', 'acsep'); ?></h2>
-                <ul class="mt-12 grid grid-cols-3 gap-x-6 gap-y-12 lg:grid-cols-4">
+                <ul class="mt-12 grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-12 lg:grid-cols-5">
                     <?php 
                     foreach($clients as $key=>$item):
                         $client = $item['client'];
