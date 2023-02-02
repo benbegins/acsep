@@ -47,7 +47,7 @@ get_header();
         <section class='list-icones-societe'>
             <div class="container">
                 <h2 class="section-title-sm"><?php _e('ACSEP vise 3 objectifs majeurs', 'acsep'); ?></h2>
-                <ul class="pt-12 lg:grid lg:grid-cols-3 lg:gap-x-8">
+                <ul class="pt-12 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-x-8">
                     <li class="list-icones-societe__item">
                         <div class="icone-container"><?= wp_get_attachment_image($objectifs['icone_objectif_1'], 'thumbnail'); ?></div>
                         <p class="lg:text-lg"><?= $objectifs['texte_objectif_1']; ?></p>
@@ -59,6 +59,10 @@ get_header();
                     <li class="list-icones-societe__item">
                         <div class="icone-container"><?= wp_get_attachment_image($objectifs['icone_objectif_3'], 'thumbnail'); ?></div>
                         <p class="lg:text-lg"><?= $objectifs['texte_objectif_3']; ?></p>
+                    </li>
+                    <li class="list-icones-societe__item">
+                        <div class="icone-container"><?= wp_get_attachment_image($objectifs['icone_objectif_4'], 'thumbnail'); ?></div>
+                        <p class="lg:text-lg"><?= $objectifs['texte_objectif_4']; ?></p>
                     </li>
                 </ul>
             </div>
