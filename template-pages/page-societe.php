@@ -93,7 +93,7 @@ get_header();
                 <h2 class="section-title-sm"><?= $titre; ?></h2>
                 <div class="lg:grid grid-cols-6">
                     <div class="mt-6 lg:mt-8 lg:col-span-3 lg:col-start-3">
-                        <p><?= $contenu; ?></p>
+                        <div class="texte-enrichi"><?= $contenu; ?></div>
                         <?php if($link): ?>
                         <div>
                             <a href="<?= $link ?>" class="btn-primary mt-6"><?= $linkText; ?></a>
@@ -140,7 +140,7 @@ get_header();
                             <p class="text-base sm:text-lg font-extrabold italic">&ldquo;<?= get_field('citation_thierry'); ?>&rdquo;.</p>
                             <div class="flex items-center mt-3">
                                 <div class="h-px bg-beige w-8 mr-3"></div>
-                                <p>Thierry Puharré</p>
+                                <p>Thierry Puharré, <?php _e('président', 'acsep'); ?></p>
                             </div>
                         </div>
                     </div>

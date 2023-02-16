@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ACSEP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-16 16:04+0000\n"
+"POT-Creation-Date: 2023-01-18 13:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -87,7 +87,7 @@ msgid ""
 "organisation logistique. "
 msgstr ""
 
-#: template-pages/page-societe.php:177
+#: template-pages/page-societe.php:173
 msgid "Des partenaires professionnels et leaders sur leur marché !"
 msgstr ""
 
@@ -143,7 +143,7 @@ msgid ""
 "réessayer avec d’autres mots-clés."
 msgstr ""
 
-#: template-pages/page-societe.php:204 template-pages/page-societe.php:225
+#: template-pages/page-societe.php:200 template-pages/page-societe.php:221
 msgid "En savoir plus"
 msgstr ""
 
@@ -175,7 +175,7 @@ msgstr ""
 msgid "https://bemy.studio"
 msgstr ""
 
-#: front-page.php:194
+#: front-page.php:185
 msgid "Ils nous font confiance"
 msgstr ""
 
@@ -199,7 +199,7 @@ msgid ""
 "Electronics France, Sonepar et XPO Logistics."
 msgstr ""
 
-#: template-parts/content-services-solutions.php:135
+#: template-parts/content-services-solutions.php:128
 msgid "Les experts d’ACSEP répondent à vos questions"
 msgstr ""
 
@@ -234,7 +234,7 @@ msgstr ""
 msgid "Nos collaborateurs ont du talent."
 msgstr ""
 
-#: front-page.php:271
+#: front-page.php:262
 msgid "Nos dernières actualités"
 msgstr ""
 
@@ -259,7 +259,7 @@ msgstr ""
 msgid "Nos solutions logicielles pour développer votre Supply Chain"
 msgstr ""
 
-#: template-pages/page-societe.php:176
+#: template-pages/page-societe.php:172
 msgid "Notre ecosystème"
 msgstr ""
 
@@ -342,7 +342,7 @@ msgstr ""
 msgid "Page texte"
 msgstr ""
 
-#: template-pages/page-societe.php:178
+#: template-pages/page-societe.php:174
 msgid ""
 "Parce que nous ne voulons pas réinventer ce que d’autres font très bien et "
 "parce qu’à plusieurs nous sommes souvent plus compétents, nous nous sommes "
@@ -373,15 +373,11 @@ msgid ""
 "humaine !"
 msgstr ""
 
-#: template-pages/page-societe.php:179
+#: template-pages/page-societe.php:175
 msgid ""
 "Pour construire notre écosystème, nous nous sommes associés à des "
 "partenaires de qualité afin de proposer des solutions et des services de "
 "premier ordre."
-msgstr ""
-
-#: template-pages/page-societe.php:143
-msgid "président"
 msgstr ""
 
 #: archive-offres-emploi.php:15
@@ -451,7 +447,7 @@ msgstr ""
 msgid "Tous nos services"
 msgstr ""
 
-#: single-actualites.php:128 front-page.php:286
+#: single-actualites.php:128 front-page.php:277
 msgid "Tous nos événements & actus"
 msgstr ""
 
@@ -459,7 +455,7 @@ msgstr ""
 msgid "Toutes les catégories"
 msgstr ""
 
-#: front-page.php:214
+#: front-page.php:205
 msgid "Toutes nos références"
 msgstr ""
 
@@ -468,7 +464,7 @@ msgid "Toutes nos solutions"
 msgstr ""
 
 #. Name of the template
-#: front-page.php:228
+#: front-page.php:219
 msgid "Témoignages"
 msgstr ""
 
