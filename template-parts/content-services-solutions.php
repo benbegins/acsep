@@ -55,6 +55,7 @@
         <?php 
         if(get_row_layout() == 'liste_2_colonnes'):
             $title = get_sub_field('liste_2_colonnes_titre');
+            $intro = get_sub_field('liste_2_colonnes_intro');
             $items = get_sub_field('liste_2_colonnes_items');
         ?>
         <section class='pb-section-mobile lg:pb-section'>
@@ -62,6 +63,12 @@
                 <h2 class="section-title-sm"><?= $title; ?></h2>
                 <div class="lg:grid grid-cols-6">
                     <div class="mt-6 lg:mt-8 lg:col-span-3 lg:col-start-3">
+                        <?php if($intro): ?>
+                        <div class="texte-enrichi mb-6">
+                            <?= $intro; ?>
+                        </div>
+                        <?php endif; ?>
+
                         <ul class="liste_2_colonnes lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-3">
                             <?php 
                             foreach($items as $item):
