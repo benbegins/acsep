@@ -22,7 +22,9 @@ get_header();
                 <?php 
                 $args = array(
                     'post_type' => 'clients',
-                    'posts_per_page' => -1
+                    'posts_per_page' => -1,
+                    'orderby' => 'title',
+                    'order' => 'ASC',
                 );
                 $query_clients = new WP_Query($args);
                 $clients = $query_clients->posts;
