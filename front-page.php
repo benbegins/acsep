@@ -178,7 +178,16 @@
         <!-- Clients -->
         <?php 
         $clients = get_field('clients');
-        if($clients): 
+        $has_clients = false;
+
+        foreach($clients as $item){
+            $client = $item['client'];
+            if($client):
+                $has_clients = true;
+            endif;
+        }
+
+        if($has_clients): 
         ?>
         <section class='pb-section-mobile lg:pb-section'>
             <div class="container">
