@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ACSEP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-18 20:53+0000\n"
+"POT-Creation-Date: 2023-02-16 16:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -83,23 +83,15 @@ msgstr ""
 
 #: front-page.php:145
 msgid ""
-"Depuis 2005, ACSEP accompagne ses clients dans l’amélioration de leur "
-"organisation supply chain et informatique."
-msgstr ""
-
-#: template-pages/page-societe.php:178
-msgid ""
-"Depuis 2005, nous avons élargi notre champ d’activités au fur et à mesure "
-"des besoins et de la croissance de nos clients, mais nous nous sommes aussi "
-"entourés de partenaires de qualité pour vous offrir des solutions et "
-"services toujours plus innovants."
+"Depuis 2005, ACSEP accompagne ses clients sur l’amélioration de leur "
+"organisation logistique. "
 msgstr ""
 
 #: template-pages/page-societe.php:177
-msgid "Des partenaires experts et leaders sur leur marché !"
+msgid "Des partenaires professionnels et leaders sur leur marché !"
 msgstr ""
 
-#: archive-services.php:67 front-page.php:82
+#: archive-services.php:69 front-page.php:82
 msgid "Des services adaptés à tous les secteurs d’activités"
 msgstr ""
 
@@ -124,7 +116,7 @@ msgid "Découvrez IzySuite"
 msgstr ""
 
 #: template-parts/page-articles.php:7
-msgid "Découvrez nos dernières actualités !"
+msgid "Découvrez les dernières tendances de l’industrie."
 msgstr ""
 
 #: template-parts/section-offres.php:9
@@ -155,20 +147,10 @@ msgstr ""
 msgid "En savoir plus"
 msgstr ""
 
-#: archive-services.php:12
-msgid ""
-"En tant que société de services, ACSEP vous propose un large éventail de "
-"savoir-faire pour vous assurer une activité optimale."
-msgstr ""
-
 #: template-pages/page-rh-humain.php:65
 msgid ""
 "Enfin, nous avons voulu mettre à l’honneur nos collaboratrices et "
 "collaborateurs à travers notre série “Les Talents d’ACSEP”."
-msgstr ""
-
-#: template-parts/section-offres.php:7
-msgid "Envie de rejoindre l’équipe ?"
 msgstr ""
 
 #: single-solutions.php:74
@@ -249,9 +231,7 @@ msgid "Nos autres solutions"
 msgstr ""
 
 #: template-pages/page-temoignages.php:17
-msgid ""
-"Nos collaborateurs ont du talent et partagent leur quotidien à travers une "
-"série de portraits."
+msgid "Nos collaborateurs ont du talent."
 msgstr ""
 
 #: front-page.php:271
@@ -276,7 +256,11 @@ msgid "Nos solutions"
 msgstr ""
 
 #: archive-solutions.php:10
-msgid "Nos solutions logicielles pour développer votre performance"
+msgid "Nos solutions logicielles pour développer votre Supply Chain"
+msgstr ""
+
+#: template-pages/page-societe.php:176
+msgid "Notre ecosystème"
 msgstr ""
 
 #: front-page.php:144
@@ -289,10 +273,6 @@ msgid ""
 "activement au développement de votre supply chain."
 msgstr ""
 
-#: template-pages/page-societe.php:176
-msgid "Notre écosystème"
-msgstr ""
-
 #: archive-clients.php:14
 msgid "Nous accompagnons plus de 150 entreprises de tous les secteurs"
 msgstr ""
@@ -303,8 +283,15 @@ msgid ""
 "réinventer la façon dont le monde bouge."
 msgstr ""
 
+#: template-parts/section-offres.php:8
+msgid ""
+"Nous assemblons l’équipe la plus innovante en matière de logistique pour "
+"réinventer la façon dont le monde bouge. Prêt à faire avancer votre carrière "
+"avec une équipe collaborative et passionnée?"
+msgstr ""
+
 #: front-page.php:124
-msgid "Nous construisons le plan de déploiement de votre solution"
+msgid "Nous construisons le plan de déploiement de la solution"
 msgstr ""
 
 #: template-pages/page-izysuite.php:114
@@ -316,18 +303,22 @@ msgid ""
 msgstr ""
 
 #: front-page.php:128
-msgid "Nous déployons votre solution et adaptons si besoin"
+msgid "Nous déployons la solution et adaptons si besoin"
 msgstr ""
 
 #: front-page.php:109
-msgid "Nous vous accompagnons sur vos projets d’optimisation logistique et IT."
+msgid "Nous vous accompagnons sur vos projets d’optimisation logistique ou IT."
+msgstr ""
+
+#: template-parts/section-offres.php:7
+msgid "Nous vous avons gardé une place !"
 msgstr ""
 
 #: front-page.php:120
 msgid "Nous étudions ensemble les meilleures solutions"
 msgstr ""
 
-#: header.php:208 header.php:216 footer.php:95
+#: header.php:195 header.php:216 footer.php:95
 msgid "Offres d'emploi"
 msgstr ""
 
@@ -351,12 +342,11 @@ msgstr ""
 msgid "Page texte"
 msgstr ""
 
-#: template-pages/page-societe.php:179
+#: template-pages/page-societe.php:178
 msgid ""
-"Parce qu’une seule entreprise ne sait pas tout faire, mais que nous ne "
-"voulons pas laisser vos questions sans réponse, nous avons un écosystème de "
-"professionnels proposant des matériels et solutions complémentaires aux "
-"nôtres."
+"Parce que nous ne voulons pas réinventer ce que d’autres font très bien et "
+"parce qu’à plusieurs nous sommes souvent plus compétents, nous nous sommes "
+"entourés de partenaires qui ont toute notre confiance."
 msgstr ""
 
 #: archive-services.php:15 single-solutions.php:22 search.php:145
@@ -383,13 +373,20 @@ msgid ""
 "humaine !"
 msgstr ""
 
+#: template-pages/page-societe.php:179
+msgid ""
+"Pour construire notre écosystème, nous nous sommes associés à des "
+"partenaires de qualité afin de proposer des solutions et des services de "
+"premier ordre."
+msgstr ""
+
 #: template-pages/page-societe.php:143
 msgid "président"
 msgstr ""
 
 #: archive-offres-emploi.php:15
 msgid ""
-"Prêt.e à faire avancer votre carrière au sein d’une équipe collaborative et "
+"Prêt à faire avancer votre carrière avec une équipe collaborative et "
 "passionnée ? Consultez nos offres du moment ou envoyez-nous votre "
 "candidature spontanée."
 msgstr ""
@@ -440,15 +437,21 @@ msgstr ""
 
 #: archive-solutions.php:12
 msgid ""
-"Spécialiste de la Supply Chain digitale, ACSEP accompagne ses clients dans "
-"l’amélioration de leur performance logistique et IT."
+"Spécialiste de la Supply Chain digitale, ACSEP accompagne depuis 2005 ses "
+"clients dans l’amélioration de leur performance logistique."
+msgstr ""
+
+#: archive-services.php:12
+msgid ""
+"Spécialiste de la Supply Chain digitale, ACSEP accompagne depuis 2005 ses "
+"clients dans l’amélioration de leur performance logistique."
 msgstr ""
 
 #: header.php:98
 msgid "Tous nos services"
 msgstr ""
 
-#: single-actualites.php:133 front-page.php:286
+#: single-actualites.php:128 front-page.php:286
 msgid "Tous nos événements & actus"
 msgstr ""
 
@@ -470,7 +473,7 @@ msgid "Témoignages"
 msgstr ""
 
 #: archive-services.php:10
-msgid "Un accompagnement Supply Chain & IT à 360°"
+msgid "Un accompagnement Supply Chain à 360°"
 msgstr ""
 
 #: template-parts/form-job.php:5
@@ -485,13 +488,6 @@ msgstr ""
 msgid "Vous pouvez néanmoins nous envoyer une candidature spontanée."
 msgstr ""
 
-#: template-parts/section-offres.php:8
-msgid ""
-"Vous souhaitez booster votre carrière entouré de collègues bienveillants et "
-"passionnés ? Consultez nos offres du moment ou envoyez-nous votre "
-"candidature spontanée."
-msgstr ""
-
-#: single-actualites.php:91
+#: single-actualites.php:86
 msgid "À lire aussi"
 msgstr ""
