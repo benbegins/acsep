@@ -42,9 +42,9 @@ get_header();
 
         <!-- Description -->
         <section>
-            <div class="container lg:grid lg:grid-cols-2 lg:gap-8">
-                <div>
-
+            <div class="container lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+                <div class="mb-12 lg:mb-0 lg:mt-6">
+                    <img class="mx-auto md:w-2/3 lg:ml-0 lg:w-5/6" src="<?= get_template_directory_uri(  ) ?>/src/img/illus/visuel-izysuite.jpg" alt="Illustration Izysuite Acsep">
                 </div>
                 <div class="texte-enrichi accroche">
                     <?php the_field('description'); ?>

@@ -4,7 +4,7 @@
         <h1 class="fade font-extrabold text-xl sm:text-2xl lg:text-3xl" data-translate="2">
             <?php _e('Actualités & événements', 'acsep') ?>
         </h1>
-        <p class="fade text-lg mt-6" data-translate="2" data-delay="0.1"><?php _e('Découvrez les dernières tendances de l’industrie.', 'acsep'); ?></p>
+        <p class="fade text-lg mt-6" data-translate="2" data-delay="0.1"><?php _e('Découvrez nos dernières actualités !', 'acsep'); ?></p>
     </div>
 </section>
 

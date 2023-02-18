@@ -9,15 +9,7 @@ $categories = get_the_terms($post->ID, 'types_actualites');
         <section class='py-section-mobile lg:py-section relative'>
             <div class="container pt-12 lg:pt-16">
 
-                <?php if(has_post_thumbnail()) : ?>
-                <div class="fade lg:w-2/3 lg:mx-auto" data-duration="2">
-                    <div class="img-container-cover mb-16 pb-[50%]">
-                        <?php
-                            the_post_thumbnail( 'medium_large');
-                        ?>
-                    </div>
-                </div>
-                <?php endif; ?>
+               
 
 
                 <div class="lg:w-1/2 lg:mx-auto">
@@ -33,6 +25,19 @@ $categories = get_the_terms($post->ID, 'types_actualites');
                         <span class="text-sm opacity-50"><?php the_date('d.m.Y'); ?></span>
                     </div>
                     <h1 class="fade text-2xl font-extrabold mb-6 mt-4"><?php the_title(); ?></h1>
+
+                     <?php if(has_post_thumbnail()) : ?>
+                    <div class="fade lg:w-3/4 lg:mx-auto" data-duration="2">
+                        <div class="rounded-xl overflow-hidden my-12">
+                            <?php
+                                the_post_thumbnail( 'medium_large', array(
+                                    'class' => 'w-full',
+                                ));
+                            ?>
+                        </div>
+                    </div>
+                    <?php endif; ?>
+
                     <div class="fade texte-enrichi accroche">
                         <?php
                         the_content();

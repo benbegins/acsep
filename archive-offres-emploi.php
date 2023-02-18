@@ -12,7 +12,7 @@ get_header();
                     <?php _e('Nos offres du moment', 'acsep') ?>
                 </h1>
                 <p class="fade text-lg my-6 lg:w-1/2" data-translate="2" data-delay="0.1"><?php _e('Nous assemblons l’équipe la plus innovante en matière de logistique pour réinventer la façon dont le monde bouge.', 'acsep'); ?></p>
-                <p class="fade lg:w-1/2" data-translate="2" data-delay="0.15"><?php _e('Prêt à faire avancer votre carrière avec une équipe collaborative et passionnée ? Consultez nos offres du moment ou envoyez-nous votre candidature spontanée.', 'acsep'); ?></p>
+                <p class="fade lg:w-1/2" data-translate="2" data-delay="0.15"><?php _e('Prêt.e à faire avancer votre carrière au sein d’une équipe collaborative et passionnée ? Consultez nos offres du moment ou envoyez-nous votre candidature spontanée.', 'acsep'); ?></p>
                 <div class="fade" data-translate="2" data-delay="0.2"><a href="#" class="btn-primary mt-8"><?php _e('Candidature spontanée', 'acsep'); ?></a></div>
             </div>
         </section>

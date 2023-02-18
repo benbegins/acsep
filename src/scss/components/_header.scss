@@ -228,7 +228,7 @@
 				transition: clip-path 0.65s $ease, visibility 0s linear 0.5s;
 
 				a {
-					@apply pl-0 py-3;
+					@apply pl-0 py-3 pr-6;
 				}
 			}
 

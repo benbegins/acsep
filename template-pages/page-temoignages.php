@@ -14,7 +14,7 @@ get_header();
                 <h1 class="fade font-extrabold text-xl sm:text-2xl lg:text-3xl lg:w-2/3 xxl:w-1/2" data-translate="2">
                     <?php the_title(); ?>
                 </h1>
-                <p class="fade text-lg mt-6 lg:w-1/2" data-translate="2" data-delay="0.1"><?php _e('Nos collaborateurs ont du talent.', 'acsep'); ?></p>
+                <p class="fade text-lg mt-6 lg:w-1/2" data-translate="2" data-delay="0.1"><?php _e('Nos collaborateurs ont du talent et partagent leur quotidien à travers une série de portraits.', 'acsep'); ?></p>
             </div>
         </section>
 

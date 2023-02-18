@@ -66,29 +66,45 @@ a {
 	z-index: -1;
 	width: 100%;
 	height: 0;
-	padding-bottom: calc(100% / (16 / 10));
+	padding-bottom: 100%;
 	margin-top: -20%;
 
 	@media screen and (min-width: $lg) {
 		position: absolute;
-		top: 50%;
+		top: 0;
+		// top: 50%;
 		z-index: -1;
 		width: 100%;
 		margin-top: 0;
-		transform: translateY(-50%);
+		padding-bottom: calc(100% / (16 / 10));
+		// transform: translateY(-50%);
 	}
 
 	&.back-3d-01 {
-		background: url("/src/img/illus/back-3d-01.jpg") center right no-repeat;
+		background: url("/src/img/illus/back-3d-01-mobile.jpg") center right
+			no-repeat;
 		background-size: cover;
+
+		@media screen and (min-width: $lg) {
+			background: url("/src/img/illus/back-3d-01.jpg") center right
+				no-repeat;
+			background-size: cover;
+		}
 	}
 	&.back-3d-02 {
 		background: url("/src/img/illus/back-3d-02.jpg") center right no-repeat;
 		background-size: cover;
 	}
 	&.back-3d-03 {
-		background: url("/src/img/illus/back-3d-03.jpg") center right no-repeat;
+		background: url("/src/img/illus/back-3d-03-mobile.jpg") center right
+			no-repeat;
 		background-size: cover;
+
+		@media screen and (min-width: $lg) {
+			background: url("/src/img/illus/back-3d-03.jpg") center right
+				no-repeat;
+			background-size: cover;
+		}
 	}
 }
 

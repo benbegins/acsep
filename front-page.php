@@ -106,7 +106,7 @@
                 </div>
                 <div class="lg:w-1/3">
                     <h2 class="section-title"><?php _e('Parlons-nous !', 'acsep'); ?></h2>
-                    <p class="text-lg mt-4"><?php _e('Nous vous accompagnons sur vos projets d’optimisation logistique ou IT.', 'acsep'); ?></p>
+                    <p class="text-lg mt-4"><?php _e('Nous vous accompagnons sur vos projets d’optimisation logistique et IT.', 'acsep'); ?></p>
                 </div>
             </div>
             <div class="container lg:border-t lg:mt-24">
@@ -121,11 +121,11 @@
                     </li>
                     <li class="item-list grid grid-cols-4 py-2 lg:block lg:w-2/12 lg:pt-8" data-delay="0.5">
                         <p class="text-xl lg:text-2xl font-extrabold lg:mb-4">03</p>
-                        <p class="col-span-3 lg:text-lg"><?php _e('Nous construisons le plan de déploiement de la solution', 'acsep'); ?></p>
+                        <p class="col-span-3 lg:text-lg"><?php _e('Nous construisons le plan de déploiement de votre solution', 'acsep'); ?></p>
                     </li>
                     <li class="item-list grid grid-cols-4 py-2 lg:block lg:w-2/12 lg:pt-8" data-delay="0.75">
                         <p class="text-xl lg:text-2xl font-extrabold lg:mb-4">04</p>
-                        <p class="col-span-3 lg:text-lg"><?php _e('Nous déployons la solution et adaptons si besoin', 'acsep'); ?></p>
+                        <p class="col-span-3 lg:text-lg"><?php _e('Nous déployons votre solution et adaptons si besoin', 'acsep'); ?></p>
                     </li>
                 </ul>
                 <div class="text-center">
@@ -142,7 +142,7 @@
                 <!-- Histoire -->
                 <div class="lg:w-5/6">
                     <h2 class="section-title"><?php _e('Notre histoire', 'acsep'); ?></h2>
-                    <p class="text-lg my-4"><?php _e('Depuis 2005, ACSEP accompagne ses clients sur l’amélioration de leur organisation logistique. ', 'acsep'); ?></p>
+                    <p class="text-lg my-4"><?php _e('Depuis 2005, ACSEP accompagne ses clients dans l’amélioration de leur organisation supply chain et informatique.', 'acsep'); ?></p>
                     <div class="pt-2 flex flex-col items-start lg:flex-row lg:items-center">
                         <a href="<?php echo get_the_permalink(pll_get_post(get_page_by_path( 'la-societe' )->ID)); ?>" class="btn-primary"><?php _e('Découvrez ACSEP', 'acsep'); ?></a>
                         <a href="<?php echo get_post_type_archive_link( 'offres-emploi' ); ?>" class="btn-secondary mt-4 lg:mt-0 lg:ml-8"><?php _e('Rejoignez-nous', 'acsep'); ?></a>

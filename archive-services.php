@@ -7,9 +7,9 @@
         <section class='hero-3d pt-section-mobile lg:py-section relative'>
             <div class="container pt-section-mobile lg:pt-section">
                 <h1 class="fade font-extrabold text-xl sm:text-2xl lg:text-3xl lg:w-2/3 xxl:w-1/2" data-translate="2">
-                    <?php _e('Un accompagnement Supply Chain à 360°', 'acsep') ?>
+                    <?php _e('Un accompagnement Supply Chain & IT à 360°', 'acsep') ?>
                 </h1>
-                <p class="fade text-lg my-6 lg:w-1/2" data-translate="2" data-delay="0.1"><?php _e('Spécialiste de la Supply Chain digitale, ACSEP accompagne depuis 2005 ses clients dans l’amélioration de leur performance logistique.', 'acsep'); ?></p>
+                <p class="fade text-lg my-6 lg:w-1/2" data-translate="2" data-delay="0.1"><?php _e('En tant que société de services, ACSEP vous propose un large éventail de savoir-faire pour vous assurer une activité optimale.', 'acsep'); ?></p>
                 <div class="fade" data-translate="2" data-delay="0.15">
                     <a href="<?php echo get_the_permalink(pll_get_post(get_page_by_path( 'contact' )->ID)); ?>" class="btn-primary">
                         <?php _e('Parlez à un expert', 'acsep'); ?>
@@ -53,35 +53,33 @@
         </section>
 
 
-        <!-- Secteurs d'activités -->
-        <?php 
-        $args = array(
-            'post_type'=>'secteurs_activites',
-            'orderby'=>'menu_order',
-                'order'=>'ASC'
-        );
-        $secteurs = new WP_Query($args); 
-        
-        if($secteurs->have_posts()):
+       <!-- Secteurs d'activités -->
+       <?php 
+         $secteurs = get_terms(array(
+            'taxonomy'      => 'secteurs',
+            'hide_empty'    => false,
+        ));
+        if($secteurs):
+            $grid_rows = ceil(count($secteurs) / 2);
         ?>
-        <section class="py-section-mobile lg:py-section border-t border-gray">
+        <section class="py-section-mobile lg:py-section">
             <div class="container md:grid md:grid-cols-2 md:gap-x-6">
                 <h2 class="section-title mb-6 md:w-5/6"><?php _e('Des services adaptés à tous les secteurs d’activités', 'acsep'); ?></h2>
                 <ul class="md:grid md:grid-cols-2 md:gap-x-8">
                 <?php 
-                while($secteurs->have_posts()):
-                    $secteurs->the_post();
+                foreach ($secteurs as $secteur):
+                    $secteur_name = $secteur->name;
+                    $secteur_link = get_term_link( $secteur->term_id, 'secteurs' );
                 ?>
                     <li>
-                        <a class="btn-liste my-3" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                        <a class="btn-liste my-3" href="<?= $secteur_link; ?>"><?= $secteur_name; ?></a>
                     </li>
-                <?php endwhile; ?>    
+                <?php endforeach; ?>    
                 </ul>
             </div>
         </section>
         <?php 
         endif; 
-        wp_reset_postdata();
         ?>
 
 

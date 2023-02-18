@@ -173,10 +173,10 @@ get_header();
         <section class="pb-section-mobile lg:pb-section">
             <div class="container text-center">
                 <div class="lg:w-1/2 lg:mx-auto">
-                    <h2 class="text-2xl font-extrabold mb-6"><?php _e('Notre ecosystème', 'acsep'); ?></h2>
-                    <h3 class="text-lg mb-6"><?php _e('Des partenaires professionnels et leaders sur leur marché !', 'acsep'); ?></h3>
-                    <p class="mb-6"><?php _e('Parce que nous ne voulons pas réinventer ce que d’autres font très bien et parce qu’à plusieurs nous sommes souvent plus compétents, nous nous sommes entourés de partenaires qui ont toute notre confiance.', 'acsep'); ?></p>
-                    <p><?php _e('Pour construire notre écosystème, nous nous sommes associés à des partenaires de qualité afin de proposer des solutions et des services de premier ordre.', 'acsep'); ?></p>
+                    <h2 class="text-2xl font-extrabold mb-6"><?php _e('Notre écosystème', 'acsep'); ?></h2>
+                    <h3 class="text-lg mb-6"><?php _e('Des partenaires experts et leaders sur leur marché !', 'acsep'); ?></h3>
+                    <p class="mb-6"><?php _e('Depuis 2005, nous avons élargi notre champ d’activités au fur et à mesure des besoins et de la croissance de nos clients, mais nous nous sommes aussi entourés de partenaires de qualité pour vous offrir des solutions et services toujours plus innovants.', 'acsep'); ?></p>
+                    <p><?php _e('Parce qu’une seule entreprise ne sait pas tout faire, mais que nous ne voulons pas laisser vos questions sans réponse, nous avons un écosystème de professionnels proposant des matériels et solutions complémentaires aux nôtres.', 'acsep'); ?></p>
                 </div>
             </div>
         </section>

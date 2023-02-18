@@ -7,9 +7,9 @@
         <section class='hero-3d pt-section-mobile lg:py-section relative'>
             <div class="container pt-section-mobile lg:pt-section">
                 <h1 class="fade font-extrabold text-xl sm:text-2xl lg:text-3xl lg:w-3/5" data-translate="2">
-                    <?php _e('Nos solutions logicielles pour développer votre Supply Chain', 'acsep') ?>
+                    <?php _e('Nos solutions logicielles pour développer votre performance', 'acsep') ?>
                 </h1>
-                <p class="fade text-lg my-6 lg:w-1/2" data-translate="2" data-delay="0.1"><?php _e('Spécialiste de la Supply Chain digitale, ACSEP accompagne depuis 2005 ses clients dans l’amélioration de leur performance logistique.', 'acsep'); ?></p>
+                <p class="fade text-lg my-6 lg:w-1/2" data-translate="2" data-delay="0.1"><?php _e('Spécialiste de la Supply Chain digitale, ACSEP accompagne ses clients dans l’amélioration de leur performance logistique et IT.', 'acsep'); ?></p>
                 <div class="fade" data-translate="2" data-delay="0.15">
                     <a href="<?php echo get_the_permalink(pll_get_post(get_page_by_path( 'contact' )->ID)); ?>" class="btn-primary">
                         <?php _e('Parlez à un expert', 'acsep'); ?>

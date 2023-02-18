@@ -6,7 +6,7 @@
         <!-- Hero -->
         <section class='py-section-mobile lg:py-section relative'>
             <div class="container flex flex-col-reverse lg:pt-section-mobile lg:flex-row lg:items-center">
-                <div class="lg:w-5/12">
+                <div class="lg:w-1/2 xl:w-5/12">
                     <h1 class="fade font-extrabold text-2xl lg:text-3xl lg:w-4/5" data-translate="2">
                         <?php the_title(); ?>
                     </h1>
@@ -23,7 +23,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="fade img-hero my-12 lg:my-0 lg:w-7/12" data-duration="2">
+                <div class="fade img-hero my-12 lg:my-0 lg:w-1/2 xl:w-7/12" data-duration="2">
                     <?php
                     $image = get_field('image');
                     if($image){

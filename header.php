@@ -191,9 +191,6 @@
                             <div>
                                 <p class="submenu__title"><?php _e('Rejoignez-nous', 'acsep'); ?></p>
                                 <ul class="inner-submenu">
-                                    <li>
-                                        <a href="<?php echo get_post_type_archive_link( 'offres-emploi' ); ?>"><?php _e('Offres d\'emploi', 'acsep'); ?></a>
-                                    </li>
                                     <?php
                                     $menuRejoignezNous = get_nav_menu_locations()['menu-rejoignez-nous'];
                                     $items = wp_get_nav_menu_items($menuRejoignezNous);
@@ -207,6 +204,9 @@
                                         }     
                                     }
                                     ?>
+                                    <li>
+                                        <a href="<?php echo get_post_type_archive_link( 'offres-emploi' ); ?>"><?php _e('Offres d\'emploi', 'acsep'); ?></a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="submenu__image">

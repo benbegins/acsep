@@ -11,14 +11,14 @@ get_header();
         <!-- Hero -->
         <section class='pt-section-mobile lg:pt-section relative'>
             <div class="container flex flex-col-reverse lg:pt-section-mobile lg:flex-row lg:items-center">
-                <div class="lg:w-5/12">
+                <div class="lg:w-1/2 xl:w-5/12">
                     <h1 class="fade font-extrabold text-2xl lg:text-3xl lg:w-4/5" data-translate="2">
                         <?php the_title(); ?>
                     </h1>
                     <p class="fade text-lg my-6 lg:w-4/5" data-translate="2" data-delay="0.1"><?php the_field('accroche'); ?></p>
                     <p class="fade lg:w-4/5" data-translate="2" data-delay="0.15"><?php the_field('intro'); ?></p>
                 </div>
-                <div class="fade img-hero my-12 lg:my-0 lg:w-7/12" data-duration="2">
+                <div class="fade img-hero my-12 lg:my-0 lg:w-1/2 xl:w-7/12" data-duration="2">
                     <?php
                         the_post_thumbnail( 'large' );
                     ?>
@@ -93,13 +93,13 @@ get_header();
         ?>
         <section class="py-section-mobile lg:py-section">
             <div class="container lg:grid lg:grid-cols-2 lg:items-center">
-                <div class="xl:w-5/6">
+                <div class="lg:w-5/6">
                     <h2 class="text-xl font-extrabold mb-6"><?php _e('Index égalité Femmes - Hommes', 'acsep'); ?></h2>
                     <p><?= $egalite['description']; ?></p>
                 </div>
                 <div class="mt-12 lg:mt-0">
-                    <div class="bg-gradient-pink text-light text-center py-12 lg:py-section rounded-xl">
-                        <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="99.464" height="91.002" viewBox="0 0 99.464 91.002">
+                    <div class="bg-gradient-pink text-light text-center py-12 lg:py-section rounded-xl lg:grid lg:grid-cols-2 lg:items-center lg:px-12">
+                        <svg class="mx-auto w-1/3 lg:w-3/5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 99.464 91.002">
                             <defs>
                                 <clipPath id="clip-path">
                                 <rect id="Rectangle_706" data-name="Rectangle 706" width="99.464" height="91.002" fill="none" stroke="#f8f9fa" stroke-width="3"/>
@@ -121,8 +121,10 @@ get_header();
                                 </g>
                             </g>
                         </svg>
-                        <p class="text-3xl font-extrabold mt-6 mb-2"><?= $egalite['chiffre']; ?></p>
-                        <p class="text-sm opacity-50 w-1/2 mx-auto max-w-[250px]"><?= $egalite['legende']; ?></p>
+                        <div>
+                            <p class="text-3xl font-extrabold mt-6 mb-2 lg:mt-0"><?= $egalite['chiffre']; ?></p>
+                            <p class="text-sm opacity-50 w-1/2 mx-auto max-w-[250px] lg:w-auto"><?= $egalite['legende']; ?></p>
+                        </div>
                     </div>
                 </div>
             </div>

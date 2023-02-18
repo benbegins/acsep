@@ -4,8 +4,8 @@
     </div>
     <div class="container">
         <div class="py-section-mobile xl:w-5/6">
-            <h2 class="text-xl sm:text-2xl font-extrabold"><?php _e('Nous vous avons gardé une place !', 'acsep'); ?></h2>
-            <p class="my-6"><?php _e('Nous assemblons l’équipe la plus innovante en matière de logistique pour réinventer la façon dont le monde bouge. Prêt à faire avancer votre carrière avec une équipe collaborative et passionnée?', 'acsep'); ?></p>
+            <h2 class="text-xl sm:text-2xl font-extrabold"><?php _e('Envie de rejoindre l’équipe ?', 'acsep'); ?></h2>
+            <p class="my-6"><?php _e('Vous souhaitez booster votre carrière entouré de collègues bienveillants et passionnés ? Consultez nos offres du moment ou envoyez-nous votre candidature spontanée.', 'acsep'); ?></p>
             <a href="<?php echo get_post_type_archive_link( 'offres-emploi' ); ?>" class="btn-primary white mt-2"><?php _e('Découvrez nos offres d’emploi', 'acsep'); ?></a>
         </div>
     </div>
