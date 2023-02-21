@@ -43,7 +43,7 @@
         <?php 
         $args = array(
             'post_type'=>'solutions',
-            'name'=>'izypro'
+            'name'=>'wms-izypro'
         );
         $izypro = get_posts( $args )[0];
         // Check if post exist in current language
