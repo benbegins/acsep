@@ -196,10 +196,12 @@
                     <?php 
                     foreach($clients as $key=>$item):
                         $client = $item['client'];
-                        $permalink = get_permalink( $client->ID);
-                        $title = get_the_title( $client->ID );
-                        $logo = get_field('logo', $client->ID);
-                        $delay = $key * 0.05;
+
+                        if($client):
+                            $permalink = get_permalink( $client->ID);
+                            $title = get_the_title( $client->ID );
+                            $logo = get_field('logo', $client->ID);
+                            $delay = $key * 0.05;
                     ?>
                     <li class="text-center" data-delay="<?= $delay; ?>">
                         <a class="inline-block h-12 max-w-[60%] lg:h-16 xl:h-20 saturate-0 opacity-50 hover:saturate-100 hover:opacity-100 transition duration-200" href="<?= $permalink; ?>">
@@ -207,6 +209,7 @@
                         </a>
                     </li>
                     <?php
+                        endif;
                     endforeach;
                     ?>
                 </ul>
