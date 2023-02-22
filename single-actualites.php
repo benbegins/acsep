@@ -13,7 +13,7 @@ $categories = get_the_terms($post->ID, 'types_actualites');
 
 
                 <div class="lg:w-1/2 lg:mx-auto">
-                    <div class="fade">
+                    <div class="fade lg:text-center">
                         <?php 
                         if($categories):
                             $cat_name = $categories[0]->name;
@@ -24,7 +24,7 @@ $categories = get_the_terms($post->ID, 'types_actualites');
 
                         <span class="text-sm opacity-50"><?php the_date('d.m.Y'); ?></span>
                     </div>
-                    <h1 class="fade text-2xl font-extrabold mb-6 mt-4"><?php the_title(); ?></h1>
+                    <h1 class="fade text-2xl font-extrabold mb-6 mt-4 lg:text-center"><?php the_title(); ?></h1>
 
                      <?php if(has_post_thumbnail()) : ?>
                     <div class="fade lg:w-3/4 lg:mx-auto" data-duration="2">
