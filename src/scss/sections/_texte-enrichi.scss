@@ -64,6 +64,10 @@
 		@apply my-6 w-full rounded-xl;
 	}
 
+	iframe {
+		@apply mx-auto;
+	}
+
 	&.accroche {
 		& > p:first-child {
 			@apply text-lg mb-12;
