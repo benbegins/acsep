@@ -25,7 +25,7 @@ switch (pll_current_language()) {
 
 if($form):
 ?>
-<section class="form-job bg-gradient-pink text-light py-section-mobile lg:py-section">
+<section class="form-job bg-gradient-pink text-light py-section-mobile lg:py-section" id="form-candidature">
     <div class="container">
         <h2 class="text-center font-extrabold text-xl lg:text-2xl lg:w-1/2 lg:mx-auto"><?= $title; ?></h2>
         <div class="lg:w-1/3 lg:mx-auto">
