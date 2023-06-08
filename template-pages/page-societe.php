@@ -222,7 +222,7 @@ get_header();
                     <h2 class="text-xl font-extrabold"><?= $focus['titre']; ?></h2>
                     <p class="mt-6"><?= $focus['presentation']; ?></p>
                     <?php if($focus['lien']): ?>
-                    <a href="<?= $focus['lien']; ?>" class="btn-secondary mt-6"><?php _e('En savoir plus', 'acsep'); ?></a>
+                    <a href="<?= $focus['lien']; ?>" class="btn-secondary mt-6" target="_blank" rel="noopener"><?php _e('En savoir plus', 'acsep'); ?></a>
                     <?php endif; ?>
                 </div>
                 <div class="mb-6 md:mb-0">

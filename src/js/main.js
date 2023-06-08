@@ -15,7 +15,7 @@ const init = () => {
 }
 
 window.addEventListener("pageshow", init)
-window.addEventListener("resize", animations)
+// window.addEventListener("resize", animations)
 
 // Smooth Scroll
 function raf(time) {

@@ -44,24 +44,43 @@ const animations = () => {
 				? (duration = element.dataset.duration)
 				: (duration = 1)
 
-			gsap.fromTo(
-				element,
-				{
-					opacity: 0,
-					y: translate,
-				},
-				{
-					opacity: 1,
-					y: 0,
-					duration: duration,
-					ease: "power2.out",
-					delay: delay,
-					scrollTrigger: {
-						trigger: element,
-						start: "top 90%",
+			if (translate !== 0) {
+				gsap.fromTo(
+					element,
+					{
+						opacity: 0,
+						y: translate,
 					},
-				}
-			)
+					{
+						opacity: 1,
+						y: 0,
+						duration: duration,
+						ease: "power2.out",
+						delay: delay,
+						scrollTrigger: {
+							trigger: element,
+							start: "top 90%",
+						},
+					}
+				)
+			} else {
+				gsap.fromTo(
+					element,
+					{
+						opacity: 0,
+					},
+					{
+						opacity: 1,
+						duration: duration,
+						ease: "power2.out",
+						delay: delay,
+						scrollTrigger: {
+							trigger: element,
+							start: "top 90%",
+						},
+					}
+				)
+			}
 		})
 	}
 }

@@ -97,6 +97,22 @@
             </div>
         </section>
         <?php endif; ?>
+       
+       
+       
+        <!-- Section Youtube -->
+        <?php 
+        if(get_row_layout() == 'youtube'):
+            $video = get_sub_field('video_youtube');
+        ?>
+        <section class='pb-section-mobile lg:pb-section'>
+            <div class="container">
+                <div class="lg:w-2/3 lg:mx-auto flex justify-center">
+                    <div class="video-youtube"><?php echo $video; ?></div>
+                </div>
+            </div>
+        </section>
+        <?php endif; ?>
 
 
         <?php
