@@ -78,3 +78,117 @@ function post_remove (){
    remove_menu_page( 'edit-comments.php' );
 }
 add_action('admin_menu', 'post_remove'); 
+
+
+
+include_once('pll/polylang-translate-rewrite-slugs.php');
+
+function acsep_rewrite_post_type_slug($post_type_translated_slugs)
+{
+    $post_type_translated_slugs = array(
+        'actualites' => array(
+            'fr' => array(
+                'has_archive' => true,
+                'rewrite' => array(
+                    'slug' => 'actualites'
+                )
+            ),
+            'en' => array(
+                'has_archive' => true,
+                'rewrite' => array(
+                    'slug' => 'news'
+                )
+            ),
+            'es' => array(
+                'has_archive' => true,
+                'rewrite' => array(
+                    'slug' => 'noticias'
+                )
+            )
+        ),
+        'solutions' => array(
+            'fr' => array(
+                'has_archive' => true,
+                'rewrite' => array(
+                    'slug' => 'solutions'
+                )
+            ),
+            'en' => array(
+                'has_archive' => true,
+                'rewrite' => array(
+                    'slug' => 'solutions'
+                )
+            ),
+            'es' => array(
+                'has_archive' => true,
+                'rewrite' => array(
+                    'slug' => 'soluciones'
+                )
+            )
+        ),
+        'offres-emploi' => array(
+            'fr' => array(
+                'has_archive' => true,
+                'rewrite' => array(
+                    'slug' => 'offres-emploi'
+                )
+            ),
+            'en' => array(
+                'has_archive' => true,
+                'rewrite' => array(
+                    'slug' => 'job-offers'
+                )
+            ),
+            'es' => array(
+                'has_archive' => true,
+                'rewrite' => array(
+                    'slug' => 'ofertas-de-empleo'
+                )
+            )
+        ),
+        'clients' => array(
+            'fr' => array(
+                'has_archive' => true,
+                'rewrite' => array(
+                    'slug' => 'clients'
+                )
+            ),
+            'en' => array(
+                'has_archive' => true,
+                'rewrite' => array(
+                    'slug' => 'customers'
+                )
+            ),
+            'es' => array(
+                'has_archive' => true,
+                'rewrite' => array(
+                    'slug' => 'clientes'
+                )
+            )
+        ),
+        'services' => array(
+            'fr' => array(
+                'has_archive' => true,
+                'rewrite' => array(
+                    'slug' => 'services'
+                )
+            ),
+            'en' => array(
+                'has_archive' => true,
+                'rewrite' => array(
+                    'slug' => 'services'
+                )
+            ),
+            'es' => array(
+                'has_archive' => true,
+                'rewrite' => array(
+                    'slug' => 'servicios'
+                )
+            )
+        ),
+    );
+
+    return $post_type_translated_slugs;
+}
+add_filter('pll_translated_post_type_rewrite_slugs', 'acsep_rewrite_post_type_slug');
+
