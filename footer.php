@@ -8,7 +8,16 @@
                     </svg>
                     <?php _e('Parlez à un expert', 'acsep'); ?>
                 </a>
-                <p class="mt-2">Tel. +33 4 42 50 96 48</p>
+                <p class="mt-2">Tel. 
+                    <?php 
+                    // Check if current language is espagnol
+                    if(pll_current_language() == 'es'):
+                        echo '+34 912 844 369';
+                    else :
+                        echo '+33 (0) 4 42 50 96 48';
+                    endif;
+                    ?>
+                </p>
             </div>
             <div class="lg:col-span-3 lg:grid lg:grid-cols-3 lg:gap-x-8">
                 <div class="lg:col-span-2 lg:grid lg:grid-cols-3 lg:gap-x-8">

@@ -7,6 +7,18 @@
     <?php wp_head(); ?>
 </head>
 
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-42EMWEW3K4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-42EMWEW3K4');
+</script>
+
+
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
@@ -19,7 +31,14 @@
             <div class="container flex justify-end items-center">
                 <!-- Phone -->
                 <div>
-                    +33 (0) 4 42 50 96 48
+                    <?php 
+                    // Check if current language is espagnol
+                    if(pll_current_language() == 'es'):
+                        echo '+34 912 844 369';
+                    else :
+                        echo '+33 (0) 4 42 50 96 48';
+                    endif;
+                    ?>
                 </div>
                 <!-- Social -->
                 <div class="flex mx-6 items-center">
