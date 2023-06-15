@@ -66,7 +66,7 @@ get_header();
                                 28108 Alcobendas <br>
                                 Madrid <br>
                                 Spain</p>
-                            <p>Tel. : +33 (0) 4 42 50 96 48</p>
+                            <p>Tel. : +34 912 844 369</p>
                         </div>
                     </div>
                 </div>
