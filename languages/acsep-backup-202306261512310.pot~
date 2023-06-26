@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ACSEP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-26 15:12+0000\n"
+"POT-Creation-Date: 2023-02-18 20:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -32,15 +32,11 @@ msgstr ""
 msgid "ACSEP vise 3 objectifs majeurs"
 msgstr ""
 
-#. Name of the template
-msgid "Actualité vidéo"
-msgstr ""
-
 #: template-parts/item-actualite.php:17 template-parts/page-articles.php:83
 msgid "Actualités"
 msgstr ""
 
-#: header.php:178 footer.php:98 template-parts/page-articles.php:5
+#: header.php:159 footer.php:89 template-parts/page-articles.php:5
 msgid "Actualités & événements"
 msgstr ""
 
@@ -139,16 +135,8 @@ msgstr ""
 msgid "Découvrez nos références"
 msgstr ""
 
-#: 404.php:31
-msgid "Découvrez nos services"
-msgstr ""
-
 #: template-pages/page-rh-humain.php:66
 msgid "Découvrez nos talents"
-msgstr ""
-
-#: 404.php:28
-msgid "Découvrez notre WMS IzyPro"
 msgstr ""
 
 #: single-solutions.php:113 taxonomy-secteurs.php:96 archive-solutions.php:32
@@ -217,7 +205,7 @@ msgstr ""
 msgid "IzySuite"
 msgstr ""
 
-#: header.php:175 header.php:202 footer.php:95
+#: header.php:156 header.php:183 footer.php:86
 msgid "La société"
 msgstr ""
 
@@ -229,7 +217,7 @@ msgid ""
 "Electronics France, Sonepar et XPO Logistics."
 msgstr ""
 
-#: template-parts/content-services-solutions.php:151
+#: template-parts/content-services-solutions.php:135
 msgid "Les experts d’ACSEP répondent à vos questions"
 msgstr ""
 
@@ -248,7 +236,7 @@ msgid ""
 " mais aussi celles de nos éditeurs partenaires."
 msgstr ""
 
-#: footer.php:183
+#: footer.php:174
 msgid "Mentions légales"
 msgstr ""
 
@@ -266,7 +254,7 @@ msgid ""
 "série de portraits."
 msgstr ""
 
-#: front-page.php:274
+#: front-page.php:271
 msgid "Nos dernières actualités"
 msgstr ""
 
@@ -274,8 +262,8 @@ msgstr ""
 msgid "Nos offres du moment"
 msgstr ""
 
-#: archive-clients.php:12 header.php:181 taxonomy-secteurs.php:144
-#: footer.php:101
+#: archive-clients.php:12 header.php:162 taxonomy-secteurs.php:144
+#: footer.php:92
 msgid "Nos références"
 msgstr ""
 
@@ -339,7 +327,7 @@ msgstr ""
 msgid "Nous étudions ensemble les meilleures solutions"
 msgstr ""
 
-#: header.php:227 header.php:235 footer.php:104
+#: header.php:208 header.php:216 footer.php:95
 msgid "Offres d'emploi"
 msgstr ""
 
@@ -372,7 +360,7 @@ msgid ""
 msgstr ""
 
 #: archive-services.php:15 single-solutions.php:22 search.php:145
-#: header.php:256 taxonomy-secteurs.php:27 archive-solutions.php:15
+#: header.php:237 taxonomy-secteurs.php:27 archive-solutions.php:15
 #: footer.php:9 single-services.php:22 template-pages/page-izysuite.php:27
 msgid "Parlez à un expert"
 msgstr ""
@@ -385,7 +373,7 @@ msgstr ""
 msgid "Pas d'articles à afficher"
 msgstr ""
 
-#: footer.php:184
+#: footer.php:175
 msgid "Politique de confidentialité"
 msgstr ""
 
@@ -406,11 +394,11 @@ msgid ""
 "candidature spontanée."
 msgstr ""
 
-#: header.php:244
+#: header.php:225
 msgid "Que cherchez-vous ?"
 msgstr ""
 
-#: header.php:208 header.php:211 front-page.php:148
+#: header.php:189 header.php:192 front-page.php:148
 msgid "Rejoignez-nous"
 msgstr ""
 
@@ -434,11 +422,11 @@ msgstr ""
 msgid "résultats pour"
 msgstr ""
 
-#: footer.php:131
+#: footer.php:122
 msgid "Secteurs d'activités"
 msgstr ""
 
-#: search.php:74 header.php:85 header.php:88 footer.php:25
+#: search.php:74 header.php:66 header.php:69 footer.php:16
 msgid "Services"
 msgstr ""
 
@@ -446,7 +434,7 @@ msgstr ""
 msgid "Siège social"
 msgstr ""
 
-#: search.php:96 header.php:123 header.php:126 footer.php:54
+#: search.php:96 header.php:104 header.php:107 footer.php:45
 msgid "Solutions"
 msgstr ""
 
@@ -456,12 +444,11 @@ msgid ""
 "l’amélioration de leur performance logistique et IT."
 msgstr ""
 
-#: header.php:117
+#: header.php:98
 msgid "Tous nos services"
 msgstr ""
 
-#: single-actualites.php:133 front-page.php:289
-#: template-pages/actualite-video.php:126
+#: single-actualites.php:133 front-page.php:286
 msgid "Tous nos événements & actus"
 msgstr ""
 
@@ -469,16 +456,16 @@ msgstr ""
 msgid "Toutes les catégories"
 msgstr ""
 
-#: front-page.php:217
+#: front-page.php:214
 msgid "Toutes nos références"
 msgstr ""
 
-#: header.php:163 front-page.php:59
+#: header.php:144 front-page.php:59
 msgid "Toutes nos solutions"
 msgstr ""
 
 #. Name of the template
-#: front-page.php:231
+#: front-page.php:228
 msgid "Témoignages"
 msgstr ""
 
@@ -505,6 +492,6 @@ msgid ""
 "candidature spontanée."
 msgstr ""
 
-#: single-actualites.php:91 template-pages/actualite-video.php:84
+#: single-actualites.php:91
 msgid "À lire aussi"
 msgstr ""
