@@ -19,6 +19,16 @@ function acsep_theme_setup(){
         'menu-rejoignez-nous' => 'Menu Rejoignez-nous',
     ) );
 
+    // Change Gutenberg default color palette
+    $new_colors = array(
+        array(
+            'name'  => __( 'ACSEP Rose', 'acsep' ),
+            'slug'  => 'acsep-pink',
+            'color' => '#cb2a6e',
+        ),
+    );
+    add_theme_support( 'editor-color-palette', $new_colors );
+
 }
 add_action( 'after_setup_theme', 'acsep_theme_setup' );
 
@@ -78,6 +88,7 @@ function post_remove (){
    remove_menu_page( 'edit-comments.php' );
 }
 add_action('admin_menu', 'post_remove'); 
+
 
 
 
