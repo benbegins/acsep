@@ -68,8 +68,12 @@
 		@apply my-6 w-full rounded-xl;
 	}
 
-	iframe {
-		@apply mx-auto;
+	.wp-block-embed__wrapper {
+		@apply mx-auto w-full aspect-video;
+
+		iframe {
+			@apply w-full h-full object-cover;
+		}
 	}
 
 	&.accroche {
