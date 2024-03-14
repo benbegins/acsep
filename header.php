@@ -40,12 +40,12 @@
                 </div>
                 <!-- Social -->
                 <div class="flex mx-6 items-center">
-                    <a href="<?php the_field('linkedin', 'option'); ?>" class="hover:opacity-50" target="_blank">
+                    <a href="<?php the_field('linkedin', 'option'); ?>" class="mr-3 hover:opacity-50" target="_blank">
                         <img width="12" src="<?= get_template_directory_uri( ) ?>/src/img/icon-linkedin.svg" alt="Linkedin ACSEP">
                     </a>
-                    <a href="<?php the_field('twitter', 'option'); ?>" class="mx-3 hover:opacity-50" target="_blank">
+                    <!-- <a href="<?php the_field('twitter', 'option'); ?>" class="mx-3 hover:opacity-50" target="_blank">
                         <img width="14" src="<?= get_template_directory_uri( ) ?>/src/img/icon-twitter.svg" alt="twitter ACSEP">
-                    </a>
+                    </a> -->
                     <a href="<?php the_field('youtube', 'option'); ?>" class="hover:opacity-50" target="_blank">
                         <img width="14" src="<?= get_template_directory_uri( ) ?>/src/img/icon-youtube.svg" alt="youtube ACSEP">
                     </a>
