@@ -1,0 +1,20 @@
+.section-actualite-du-moment {
+	background: $pink;
+	background: linear-gradient(220deg, rgba(229, 98, 153, 1) 0%, rgba(203, 42, 110, 1) 50%, rgba(101, 0, 43, 1) 100%);
+
+	@media screen and (min-width: 768px) {
+		background: none;
+	}
+
+	&__content {
+		@media screen and (min-width: 768px) {
+			background: $pink;
+			background: linear-gradient(
+				220deg,
+				rgba(229, 98, 153, 1) 0%,
+				rgba(203, 42, 110, 1) 30%,
+				rgba(101, 0, 43, 1) 60%
+			);
+		}
+	}
+}

@@ -31,10 +31,15 @@
                     alt="Illustration Acsep">
             </div>
         </section>
-        
 
-       <!-- Services -->
-       <?php 
+
+        <!-- Actualité du moment -->
+        <?php 
+        get_template_part( '/template-parts/section-actualite-du-moment' );
+        ?>
+
+        <!-- Services -->
+        <?php 
         get_template_part( '/template-parts/section-slider-services' );
         ?>
 
@@ -265,6 +270,14 @@
         $args = array(
             'post_type' => 'actualites',
             'posts_per_page' => 4,
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'types_actualites',
+                    'field' => 'term_id',
+                    'terms' => get_field('homepage_articles', 'option'),
+                    'operator' => 'NOT IN'
+                )
+            )
         );
         $actualites = new WP_Query($args);
         if($actualites->have_posts()): 

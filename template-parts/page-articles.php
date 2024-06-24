@@ -19,7 +19,8 @@
             <?php 
             $categories = get_terms( array(
                 'taxonomy' => 'types_actualites',
-                'hide_empty' => false
+                'hide_empty' => false,
+                'exclude' => get_field('homepage_articles', 'option')
             ));
 
             
@@ -48,7 +49,22 @@
 <section class='py-section-mobile lg:py-section'>
     <div class="container">
         <?php 
-        if(have_posts()):
+
+        $args = array(
+            'post_type' => 'actualites',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'types_actualites',
+                    'field' => 'term_id',
+                    'terms' => get_field('homepage_articles', 'option'),
+                    'operator' => 'NOT IN'
+                )
+            )
+        );
+
+        $articles = new WP_Query($args);
+
+        if($articles->have_posts()):
         ?>
         
         <ul class="list-articles grid md:gap-x-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-x-8">
@@ -56,9 +72,10 @@
         <?php
             $index = 0;
 
-            while(have_posts()):
+            while($articles->have_posts()):
+                
                 $index++;
-                the_post();
+                $articles->the_post();
 
                 if($index === 1):
         ?>

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ACSEP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-26 15:12+0000\n"
+"POT-Creation-Date: 2024-06-24 14:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -24,6 +24,10 @@ msgstr ""
 msgid "ACSEP Iberia"
 msgstr ""
 
+#: functions.php:25
+msgid "ACSEP Rose"
+msgstr ""
+
 #. Description of the theme
 msgid "ACSEP Theme"
 msgstr ""
@@ -32,15 +36,20 @@ msgstr ""
 msgid "ACSEP vise 3 objectifs majeurs"
 msgstr ""
 
+#: template-parts/section-actualite-du-moment.php:18
+msgid "Actualité du moment"
+msgstr ""
+
 #. Name of the template
+#: template-pages/actualite-video.php:2
 msgid "Actualité vidéo"
 msgstr ""
 
-#: template-parts/item-actualite.php:17 template-parts/page-articles.php:83
+#: template-parts/item-actualite.php:17 template-parts/page-articles.php:100
 msgid "Actualités"
 msgstr ""
 
-#: header.php:178 footer.php:98 template-parts/page-articles.php:5
+#: header.php:176 footer.php:98 template-parts/page-articles.php:5
 msgid "Actualités & événements"
 msgstr ""
 
@@ -71,11 +80,11 @@ msgid ""
 "vous concernent pour en savoir plus,"
 msgstr ""
 
-#: front-page.php:132 template-parts/section-contact-sm.php:9
+#: front-page.php:137 template-parts/section-contact-sm.php:9
 msgid "Contactez-nous"
 msgstr ""
 
-#: front-page.php:116
+#: front-page.php:121
 msgid "Contactez-nous pour nous parler de vos besoins"
 msgstr ""
 
@@ -85,7 +94,7 @@ msgid ""
 "vos objectifs."
 msgstr ""
 
-#: front-page.php:145
+#: front-page.php:150
 msgid ""
 "Depuis 2005, ACSEP accompagne ses clients dans l’amélioration de leur "
 "organisation supply chain et informatique."
@@ -103,7 +112,7 @@ msgstr ""
 msgid "Des partenaires experts et leaders sur leur marché !"
 msgstr ""
 
-#: archive-services.php:67 front-page.php:82
+#: archive-services.php:67 front-page.php:87
 msgid "Des services adaptés à tous les secteurs d’activités"
 msgstr ""
 
@@ -111,7 +120,7 @@ msgstr ""
 msgid "Digitalisez <br>votre supply chain"
 msgstr ""
 
-#: front-page.php:17 front-page.php:147
+#: front-page.php:17 front-page.php:152
 msgid "Découvrez ACSEP"
 msgstr ""
 
@@ -119,7 +128,7 @@ msgstr ""
 msgid "Découvrez ce service"
 msgstr ""
 
-#: front-page.php:58
+#: front-page.php:63
 msgid "Découvrez IzyPro"
 msgstr ""
 
@@ -187,7 +196,7 @@ msgstr ""
 msgid "Explorez tous les modules de notre suite IzySuite !"
 msgstr ""
 
-#: front-page.php:56
+#: front-page.php:61
 msgid "Facilitez la gestion de votre entrepôt avec notre solution IzyPro WMS"
 msgstr ""
 
@@ -205,7 +214,7 @@ msgstr ""
 msgid "https://bemy.studio"
 msgstr ""
 
-#: front-page.php:194
+#: front-page.php:199
 msgid "Ils nous font confiance"
 msgstr ""
 
@@ -214,10 +223,11 @@ msgid "Index égalité Femmes - Hommes"
 msgstr ""
 
 #. Name of the template
+#: template-pages/page-izysuite.php:2
 msgid "IzySuite"
 msgstr ""
 
-#: header.php:175 header.php:202 footer.php:95
+#: header.php:173 header.php:200 footer.php:95
 msgid "La société"
 msgstr ""
 
@@ -233,7 +243,8 @@ msgstr ""
 msgid "Les experts d’ACSEP répondent à vos questions"
 msgstr ""
 
-#: template-parts/page-articles.php:99
+#: template-parts/section-actualite-du-moment.php:21
+#: template-parts/page-articles.php:116
 msgid "Lire la suite"
 msgstr ""
 
@@ -266,7 +277,7 @@ msgid ""
 "série de portraits."
 msgstr ""
 
-#: front-page.php:274
+#: front-page.php:287
 msgid "Nos dernières actualités"
 msgstr ""
 
@@ -274,7 +285,7 @@ msgstr ""
 msgid "Nos offres du moment"
 msgstr ""
 
-#: archive-clients.php:12 header.php:181 taxonomy-secteurs.php:144
+#: archive-clients.php:12 header.php:179 taxonomy-secteurs.php:144
 #: footer.php:101
 msgid "Nos références"
 msgstr ""
@@ -291,7 +302,7 @@ msgstr ""
 msgid "Nos solutions logicielles pour développer votre performance"
 msgstr ""
 
-#: front-page.php:144
+#: front-page.php:149
 msgid "Notre histoire"
 msgstr ""
 
@@ -315,7 +326,7 @@ msgid ""
 "réinventer la façon dont le monde bouge."
 msgstr ""
 
-#: front-page.php:124
+#: front-page.php:129
 msgid "Nous construisons le plan de déploiement de votre solution"
 msgstr ""
 
@@ -327,19 +338,19 @@ msgid ""
 "pour créer une application de toute pièce ou une extension au SI existant."
 msgstr ""
 
-#: front-page.php:128
+#: front-page.php:133
 msgid "Nous déployons votre solution et adaptons si besoin"
 msgstr ""
 
-#: front-page.php:109
+#: front-page.php:114
 msgid "Nous vous accompagnons sur vos projets d’optimisation logistique et IT."
 msgstr ""
 
-#: front-page.php:120
+#: front-page.php:125
 msgid "Nous étudions ensemble les meilleures solutions"
 msgstr ""
 
-#: header.php:227 header.php:235 footer.php:104
+#: header.php:225 header.php:233 footer.php:104
 msgid "Offres d'emploi"
 msgstr ""
 
@@ -348,18 +359,22 @@ msgid "Oups ! La page que vous avez demandée n’existe pas…"
 msgstr ""
 
 #. Name of the template
+#: template-pages/page-contact.php:2
 msgid "Page Contact"
 msgstr ""
 
 #. Name of the template
+#: template-pages/page-rh-humain.php:2
 msgid "Page RH - Humain"
 msgstr ""
 
 #. Name of the template
+#: template-pages/page-societe.php:2
 msgid "Page Société"
 msgstr ""
 
 #. Name of the template
+#: template-pages/page-texte.php:2
 msgid "Page texte"
 msgstr ""
 
@@ -372,16 +387,16 @@ msgid ""
 msgstr ""
 
 #: archive-services.php:15 single-solutions.php:22 search.php:145
-#: header.php:256 taxonomy-secteurs.php:27 archive-solutions.php:15
+#: header.php:254 taxonomy-secteurs.php:27 archive-solutions.php:15
 #: footer.php:9 single-services.php:22 template-pages/page-izysuite.php:27
 msgid "Parlez à un expert"
 msgstr ""
 
-#: front-page.php:108 template-parts/section-contact-sm.php:7
+#: front-page.php:113 template-parts/section-contact-sm.php:7
 msgid "Parlons-nous !"
 msgstr ""
 
-#: template-parts/page-articles.php:129
+#: template-parts/page-articles.php:146
 msgid "Pas d'articles à afficher"
 msgstr ""
 
@@ -406,11 +421,11 @@ msgid ""
 "candidature spontanée."
 msgstr ""
 
-#: header.php:244
+#: header.php:242
 msgid "Que cherchez-vous ?"
 msgstr ""
 
-#: header.php:208 header.php:211 front-page.php:148
+#: header.php:206 header.php:209 front-page.php:153
 msgid "Rejoignez-nous"
 msgstr ""
 
@@ -418,7 +433,7 @@ msgstr ""
 msgid "Retour aux offres"
 msgstr ""
 
-#: template-parts/page-articles.php:131
+#: template-parts/page-articles.php:148
 msgid "Retour à l'accueil"
 msgstr ""
 
@@ -438,7 +453,7 @@ msgstr ""
 msgid "Secteurs d'activités"
 msgstr ""
 
-#: search.php:74 header.php:85 header.php:88 footer.php:25
+#: search.php:74 header.php:83 header.php:86 footer.php:25
 msgid "Services"
 msgstr ""
 
@@ -446,7 +461,7 @@ msgstr ""
 msgid "Siège social"
 msgstr ""
 
-#: search.php:96 header.php:123 header.php:126 footer.php:54
+#: search.php:96 header.php:121 header.php:124 footer.php:54
 msgid "Solutions"
 msgstr ""
 
@@ -456,11 +471,11 @@ msgid ""
 "l’amélioration de leur performance logistique et IT."
 msgstr ""
 
-#: header.php:117
+#: header.php:115
 msgid "Tous nos services"
 msgstr ""
 
-#: single-actualites.php:133 front-page.php:289
+#: single-actualites.php:133 front-page.php:302
 #: template-pages/actualite-video.php:126
 msgid "Tous nos événements & actus"
 msgstr ""
@@ -469,16 +484,16 @@ msgstr ""
 msgid "Toutes les catégories"
 msgstr ""
 
-#: front-page.php:217
+#: front-page.php:222
 msgid "Toutes nos références"
 msgstr ""
 
-#: header.php:163 front-page.php:59
+#: header.php:161 front-page.php:64
 msgid "Toutes nos solutions"
 msgstr ""
 
 #. Name of the template
-#: front-page.php:231
+#: front-page.php:236 template-pages/page-temoignages.php:2
 msgid "Témoignages"
 msgstr ""
 

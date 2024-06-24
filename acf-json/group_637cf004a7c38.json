@@ -1,0 +1,45 @@
+{
+    "key": "group_637cf004a7c38",
+    "title": "Solution IzySuite",
+    "fields": [
+        {
+            "key": "field_637cf00b5109f",
+            "label": "IzySuite",
+            "name": "izysuite",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "La solution fait-elle partie de la suite IzySuite ?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "solutions"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1719218420
+}
