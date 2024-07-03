@@ -59,7 +59,8 @@
                     'terms' => get_field('homepage_articles', 'option'),
                     'operator' => 'NOT IN'
                 )
-            )
+                ),
+            'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
         );
 
         $articles = new WP_Query($args);
