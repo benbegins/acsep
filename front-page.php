@@ -46,13 +46,9 @@
 
         <!-- IzyPro -->
         <?php 
-        $args = array(
-            'post_type'=>'solutions',
-            'name'=>'wms-izypro'
-        );
-        $izypro = get_posts( $args )[0];
-        // Check if post exist in current language
-        if(pll_get_post($izypro->ID)):
+        $izypro = get_field('izypro');
+
+        if($izypro):
         ?>
         <section class="relative">
             <div class="container md:grid md:grid-cols-2 md:items-center md:gap-8  min-h-[28vw]">

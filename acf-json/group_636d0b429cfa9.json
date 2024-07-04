@@ -43,6 +43,46 @@
             "ui": 1
         },
         {
+            "key": "field_6686a0572f501",
+            "label": "IzyPro",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6686a06d2f502",
+            "label": "Izypro",
+            "name": "izypro",
+            "aria-label": "",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "solutions"
+            ],
+            "taxonomy": "",
+            "return_format": "object",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 1
+        },
+        {
             "key": "field_636d159cc9a98",
             "label": "Chiffres clés",
             "name": "",
@@ -341,5 +381,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1719234903
+    "modified": 1720098955
 }
