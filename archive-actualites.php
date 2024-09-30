@@ -9,7 +9,7 @@ get_header();
         
 
         $args = array(
-            'slug' => 'all',
+            'slug' => '',
         );
 
         get_template_part('/template-parts/page-articles', '', $args); 

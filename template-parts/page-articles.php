@@ -14,29 +14,24 @@
     <div class="fade container" data-delay="0.25" data-translate="2">
         <ul class="flex flex-wrap">
             <li>
-                <a href="<?php echo get_post_type_archive_link( 'actualites' ); ?>" class="btn-tertiary mr-8 my-2<?php if($args['slug'] === 'all'){echo ' active';} ?>"><?php _e('Toutes les catégories', 'acsep'); ?></a>
+                <a href="<?php echo get_post_type_archive_link( 'actualites' ); ?>" class="btn-tertiary mr-8 my-2<?php if(!$args['slug']){echo ' active';} ?>"><?php _e('Toutes les catégories', 'acsep'); ?></a>
             </li>
+
             <?php 
             $categories = get_terms( array(
                 'taxonomy' => 'types_actualites',
                 'hide_empty' => false,
                 'exclude' => get_field('homepage_articles', 'option')
             ));
-
-            
-
-            
             foreach($categories as $category):     
                 $name = $category->name;        
                 $link = get_term_link( $category->term_id);
             ?>
-
             <li>
                 <a href="<?= $link; ?>" class="btn-tertiary mr-8 my-2<?php if($args['slug'] === $category->slug){echo ' active';} ?>">
                     <?= $name; ?>
                 </a>
             </li>
-            
             <?php
             endforeach; 
             ?>
@@ -52,14 +47,19 @@
 
         $args = array(
             'post_type' => 'actualites',
-            'tax_query' => array(
+            'tax_query' => array_filter([
+                $args['slug'] ? array(
+                    'taxonomy' => 'types_actualites',
+                    'field' => 'slug',
+                    'terms' => $args['slug'],
+                ) : null,
                 array(
                     'taxonomy' => 'types_actualites',
                     'field' => 'term_id',
                     'terms' => get_field('homepage_articles', 'option'),
                     'operator' => 'NOT IN'
-                )
                 ),
+            ]),
             'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
         );
 
